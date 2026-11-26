@@ -15,7 +15,7 @@
 //     in their own repositories. The one exception, as the Factory's keys rule: a commit that only adds one new
 //     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 //     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
+//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
 //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
 //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
 //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -94,7 +94,7 @@ export async function checkSigners({ cwd = process.cwd(), before, after, keys, p
   const selfPublished = (c, agent) => {
     const changes = lines(git('diff-tree', '--no-commit-id', '--name-status', '-r', c));
     const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
+    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
     try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
   };
   try {

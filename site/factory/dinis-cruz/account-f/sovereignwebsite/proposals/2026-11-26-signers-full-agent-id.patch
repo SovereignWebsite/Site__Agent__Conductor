@@ -1,5 +1,5 @@
 diff --git a/seed/SovereignWebsite__Hub/.github/ci/signers.mjs b/seed/SovereignWebsite__Hub/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/SovereignWebsite__Hub/.github/ci/signers.mjs
 +++ b/seed/SovereignWebsite__Hub/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -16,7 +16,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -53,13 +53,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/SovereignWebsite__Org/.github/ci/signers.mjs b/seed/SovereignWebsite__Org/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/SovereignWebsite__Org/.github/ci/signers.mjs
 +++ b/seed/SovereignWebsite__Org/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -76,7 +76,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -113,13 +113,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/SovereignWebsite__Site/.github/ci/signers.mjs b/seed/SovereignWebsite__Site/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/SovereignWebsite__Site/.github/ci/signers.mjs
 +++ b/seed/SovereignWebsite__Site/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -136,7 +136,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -173,13 +173,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/SovereignWebsite__Vault/.github/ci/signers.mjs b/seed/SovereignWebsite__Vault/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/SovereignWebsite__Vault/.github/ci/signers.mjs
 +++ b/seed/SovereignWebsite__Vault/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -196,7 +196,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -233,13 +233,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/SovereignWebsite__Website/.github/ci/signers.mjs b/seed/SovereignWebsite__Website/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/SovereignWebsite__Website/.github/ci/signers.mjs
 +++ b/seed/SovereignWebsite__Website/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -256,7 +256,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -293,13 +293,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/agent-template/.github/ci/signers.mjs b/seed/agent-template/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/agent-template/.github/ci/signers.mjs
 +++ b/seed/agent-template/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -316,7 +316,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -353,13 +353,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/gate-template/.github/ci/signers.mjs b/seed/gate-template/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/gate-template/.github/ci/signers.mjs
 +++ b/seed/gate-template/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -376,7 +376,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -413,13 +413,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/home-template/.github/ci/signers.mjs b/seed/home-template/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/home-template/.github/ci/signers.mjs
 +++ b/seed/home-template/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -436,7 +436,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -473,27 +473,28 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/managed-history.json b/seed/managed-history.json
-index f86dd25..fb81cf3 100644
+index f86dd25..b26b661 100644
 --- a/seed/managed-history.json
 +++ b/seed/managed-history.json
-@@ -7,7 +7,8 @@
+@@ -7,7 +7,9 @@
        "db94d3974d95961035757aa359adae6fd0b49e74",
        "e08d542523b1e24dc9241ef7065c987d342a658a",
        "120178a82f75c68f2c7d0998846d797876f1fa57",
 -      "e82a1fd741114d2aa6951eeb47345482a486f1d6"
 +      "e82a1fd741114d2aa6951eeb47345482a486f1d6",
-+      "48c4077c318178bb2ef6e20d4922d758aa10fa42"
++      "48c4077c318178bb2ef6e20d4922d758aa10fa42",
++      "33c5ac24cdc94f2922b1df9916023a97a29f4291"
      ],
      ".github/ci/axe.mjs": [
        "ff9f2e26bdeb31850f4b4a1b004c7ee0fcf57f56",
 diff --git a/seed/redirect-template/.github/ci/signers.mjs b/seed/redirect-template/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/redirect-template/.github/ci/signers.mjs
 +++ b/seed/redirect-template/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -510,7 +511,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -547,13 +548,13 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/seed/site-template/.github/ci/signers.mjs b/seed/site-template/.github/ci/signers.mjs
-index e82a1fd..48c4077 100644
+index e82a1fd..33c5ac2 100644
 --- a/seed/site-template/.github/ci/signers.mjs
 +++ b/seed/site-template/.github/ci/signers.mjs
 @@ -8,11 +8,14 @@
@@ -570,7 +571,7 @@ index e82a1fd..48c4077 100644
 -//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
 +//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
 +//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
-+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
++//     in this repository already (a second file cannot slip a second key in under an existing name; agent ids compared without regard to case). A site key for an agent that has a live entry with a different key in
  //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
  //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
  //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -607,16 +608,16 @@ index e82a1fd..48c4077 100644
 -    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
 -    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
 +    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
-+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
++    if (!file || keysAt(`${c}^`).some((k) => k.agent.toLowerCase() === agent.toLowerCase() && live(k))) return null;
 +    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
    };
    try {
      const ok = [], people = [], overrides = [], refused = [];
 diff --git a/test/run.mjs b/test/run.mjs
-index 4ee7cad..3e59b99 100644
+index 4ee7cad..be0a6c6 100644
 --- a/test/run.mjs
 +++ b/test/run.mjs
-@@ -501,6 +501,21 @@ assert.ok(wfSecret.blockers.some((b) => b.includes('APP_KEY')), 'a workflow secr
+@@ -501,6 +501,24 @@ assert.ok(wfSecret.blockers.some((b) => b.includes('APP_KEY')), 'a workflow secr
    const misfiled = put({ x: H }, 'h', 'h');
    assert.equal((await run(pub, misfiled)).refused.length, 1, 'a key whose file name is not its agent does not count');
    git('reset', '-q', '--hard', pub);
@@ -631,6 +632,9 @@ index 4ee7cad..3e59b99 100644
 +    git('reset', '-q', '--hard', pub);
 +    const second = full({ ...H, agent: 'g@X.y', session: G.session }, 'h', 'g@X.y');
 +    assert.equal((await run(pub, second)).refused.length, 1, 'a full-id file cannot slip a second key in under a name that already has one');
++    git('reset', '-q', '--hard', pub);
++    const cased = full({ ...H, agent: 'G@X.y', session: G.session }, 'h', 'G@X.y');
++    assert.equal((await run(pub, cased)).refused.length, 1, 'nor under the same name in another case (site/keys/G@X.y.json beside g.json; cl-6.security, low finding)');
 +    git('reset', '-q', '--hard', pub);
 +    const sneakZ = full(Z, 'gz', 'g@Z.y', 'and another change');
 +    assert.equal((await run(pub, sneakZ)).refused.length, 1, 'a full-id key added with any other change does not vouch for itself');
