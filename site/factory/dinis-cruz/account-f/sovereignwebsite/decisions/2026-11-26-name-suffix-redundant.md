@@ -12,3 +12,6 @@ This repository's signer check (`.github/ci/signers.mjs`, seeded from SovereignW
 
 ## What removes the suffix
 The signer check must read the full name, for example `site/keys/<role>@<Project>.json` or a key file per full agent id. That is a change to a seeded file, kept by the Factory (SovereignWebsite__IaC), not by me; asked of cl-6.maestro to route. Until then the name stays `cl-6.conductor-sw@SovereignWebsite.dinis`, so its commits keep passing the check; renaming to a longer suffix would go against this rule.
+
+## The same clash elsewhere
+- Site__Agent__Observability: cl-6.observability-sw keeps its suffix because `cl-6.observability` there is already another agent's key (cec3e3d), as it told me at 16:50 UTC. The same full-name fix would let it drop the suffix.
