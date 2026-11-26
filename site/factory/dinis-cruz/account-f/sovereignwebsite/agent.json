@@ -25,17 +25,23 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
   "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC, set by cl-6.maestro (26 Nov 16:44 UTC)",
   "state": "working",
-  "updated": "2026-11-26T16:48Z",
+  "updated": "2026-11-26T16:50Z",
   "waiting_on": [
-    {
-      "what": "cl-6.maestro to start cl-6.studio, cl-6.librarian and cl-6.design (Dinis's yes, decisions/2026-11-26-start-studio-librarian-design.md)",
-      "who": "cl-6.maestro@dinis",
-      "since": "2026-11-26T16:48Z"
-    },
     {
       "what": "Dinis's answers to decisions 2 to 5 in map.md section 6",
       "who": "Dinis Cruz",
       "since": "2026-11-26T16:50Z"
+    },
+    {
+      "what": "the signer check keyed on the full agent id, so the -sw suffix can go",
+      "who": "the Factory, routed by cl-6.maestro",
+      "since": "2026-11-26T16:53Z"
     }
-  ]
+  ],
+  "twins_on_account_6": {
+    "cl-6.studio@dinis": "https://claude.ai/code/session_016CrbJJe27HT4pDaUAkSFEi",
+    "cl-6.librarian@dinis": "https://claude.ai/code/session_016CrbJL9iaXQ1KjPkESLpRK",
+    "cl-6.design@dinis": "https://claude.ai/code/session_016CrbJN8TyFQTFEyKbVKSXf",
+    "cl-6.observability-sw": "https://claude.ai/code/session_016CrbJLxxCM4FYbD8NdRvQV"
+  }
 }

@@ -54,6 +54,10 @@ From cl-6.maestro, Site__Agent__Maestro__Claude__6 `site/factory/dinis-cruz/acco
 | cl-6.router@dinis | router of account F: cross-account synchronisation | Site__Agent__Router__Claude__6 |
 | cl-6.conductor@sgit.dinis, cl-6.conductor-cbr@CBR.dinis | conductors of sgit and CBR (13:54 UTC 26 Nov) | this repository |
 | cl-6.conductor-sw (me) | this map | this repository |
+| cl-6.studio@dinis | the Sovereign Website videos (started 16:50 UTC 26 Nov, Sonnet; https://claude.ai/code/session_016CrbJJe27HT4pDaUAkSFEi) | Site__Agent__Studio |
+| cl-6.librarian@dinis | the librarian's first run (16:50 UTC, Sonnet; https://claude.ai/code/session_016CrbJL9iaXQ1KjPkESLpRK) | Site__Agent__Library |
+| cl-6.design@dinis | design rounds on the selling sites, as proposals for b.design (16:50 UTC, Sonnet; https://claude.ai/code/session_016CrbJN8TyFQTFEyKbVKSXf) | Site__Agent__Design |
+| cl-6.observability-sw | token-heavy, credential-free work for observability.b: drain tests, review, secret-free pilot drafts, stats page, reports ([plan](https://github.com/SovereignWebsite/Site__Agent__Observability/blob/dev/site/factory/dinis-cruz/account-f/sovereignwebsite/plan.md); split waits on observability.b and Dinis) | Site__Agent__Observability |
 
 Not yet on account 6, recorded as waiting on Dinis in cl-6.maestro's `now.md`: **the Sovereign Website videos** ("a studio twin of studio.c on F, with a publishing agent that prepares posts for a person to post. Needs Site__Agent__Studio and Site__Agent__Instagram attached to account F"; "Whether to start the Sovereign Website studio session now, on Site__Agent__Studio"). Everything else on account 6 (about 45 sessions) is PrompTugal.
 
