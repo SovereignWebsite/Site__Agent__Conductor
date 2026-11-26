@@ -1,7 +1,7 @@
 {
   "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
   "session": "https://claude.ai/code/session_016CrbJJDDrc1h8iMR8TwXKq",
-  "status": "active",
+  "status": "superseded",
   "fingerprint": "sha256:7cced9947a91a477",
   "signing_fingerprint": "sha256:56e061b504533d6e",
   "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFtpq/fbmmF70QTkmelpFcz76Z+1hA6q3ycYWtsNFs4N0Jy5xHfFmeaZs2+k6Xs1FhoH+UR7S3tYcVZyQdUHBBE=",
@@ -11,5 +11,7 @@
     "sign_alg": "ECDSA P-256",
     "encrypt_alg": "RSA-4096"
   },
-  "how": "Made by the agent in its own session with openssl (P-256 signing, RSA-4096 encryption). Only the public halves are here; the private halves stay outside the repository, mode 600. fingerprint is sha256 of the encryption key's SPKI, signing_fingerprint of the signing key's (first 16 hex). A session key: it ends with its session."
+  "how": "Made by the agent in its own session with openssl (P-256 signing, RSA-4096 encryption). Only the public halves are here; the private halves stay outside the repository, mode 600. fingerprint is sha256 of the encryption key's SPKI, signing_fingerprint of the signing key's (first 16 hex). A session key: it ends with its session.",
+  "superseded_by": "cl-6.conductor@SovereignWebsite.dinis (site/keys/cl-6.conductor@SovereignWebsite.dinis.json, 5996fb8)",
+  "superseded": "2026-11-26: the session was recycled under the correct name at Dinis's word (decisions/2026-11-26-name-suffix-redundant.md)"
 }
