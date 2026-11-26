@@ -94,6 +94,7 @@ Dinis asked which agent focuses on a web-based CMS so owners and customers can c
 - **Blocked:** b.onboarding's push to Site__Agent__Onboarding is refused; that repository still holds only its seed (8732cbb, 25 Nov). Its open question to Dinis: "the GitHub path for all owners, or only those who want direct control?"
 - **Around it:** b.vault.keeper (owners' vaults and keys), b.security (review before any real owner, four conditions), each site's keeper (builds from the vault). A 20 Nov milestone records the first owner editing her own site (IaC `board/milestones.md`).
 - **Proposed:** a CMS twin on account 6 (token-heavy front-end and test work) building b.onboarding's mini CMS as proposals for b.onboarding and b.security, starting on a fictional demo owner; sent to cl-6.maestro under Dinis's standing rule on missing agents. Owners' names are not recorded here.
+- **Started:** cl-6.onboarding@SovereignWebsite.dinis (Site__Agent__Onboarding). First prototype pushed 16:58 UTC (2b4c30c): `site/factory/dinis-cruz/account-f/cms/` and `design.html`. Next: b.onboarding's and b.security's review, then Dinis's answer on GitHub for all owners or some.
 
 ## 7. Known issue
 `bash tools/check.sh` fails on dev before any change of mine, on the repository's own `site/index.html` (no Open Graph and Twitter tags, share-check). Recorded, not fixed: outside my area.
