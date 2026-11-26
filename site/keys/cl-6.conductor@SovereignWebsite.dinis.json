@@ -1,0 +1,15 @@
+{
+  "agent": "cl-6.conductor@SovereignWebsite.dinis",
+  "session": "https://claude.ai/code/session_016CrbJMEoSe4amZo797Zpta",
+  "status": "active",
+  "fingerprint": "sha256:cd516efe147e79e1",
+  "signing_fingerprint": "sha256:48ab64664cee9e53",
+  "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCo/tV2dHIH71ds7Tt9pc4leX6eA2dfoMoQA3efZ7PX8EEo+aY7KX5PDe0xsQMB2eEdT9zEOFBydDsprrP1B2pQ=",
+  "bundle": {
+    "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEKj+1XZ0cgfvV2ztO32lziV5fp4DZ\n1+gyhADd59ns9fwQSj5pjspfk8N7TGxAwHZ4R1P3MQ4UHJ0Oymus/UHalA==\n-----END PUBLIC KEY-----\n",
+    "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAnttgTJFTyAjSZtvEqxMh\ngYkqJmovyoGRm/ENDb03NKiGc7F6+/7BYN7k/I8SaQZp8ELSl8YOy3lhn/U6wpGd\nPsKnwWU4a1pZlBItaHAwRJh9BUmhOf8A2vWLfiqDK2yHmp1VMAkXNeyyJnjoPam6\nrziNJbVcJbMCCyca00+hotby5nu343O93C1oUpva5qkMSI1/qjoILi8S6l1RfcEs\nia4QSAeiT1DzhYWIwsk3FfXp2RxRe4/J5tlKkO0GlLCZSlSqB2tB1G23lRE0V3IQ\nVjcJQ6mvBtWzE6JlMGctNzrHinyumTR0F+lyb/gAHzfaq/eurYLMrGic8NK1FIwv\nJqtLUfa9XGYhZ8HtJUdoNjyruNyzZMwfxXHBigE2GRi0qdVtEeranxvY2uNpcIBB\nqa0TUJUQ8qo+oLAxaUkV9VO6NMymfiO/hi9IuO/S3LeSp6r2bu4kUZ/++ID7FAML\nwhcJ6mTzEKDmEGcW8AtDi8py+Dw2KFII2qC6zbvRPAx/lN2J4bTPL0ysjACCSHPc\n3x68mtX4Pb5jckGu0t4s+ZZMlJxhsz3hHuU5HYI0LK6yuhF56ycRFgSw7HKItSrf\nEm3BH0aoXXHpzPw9CEvJWemzEY6G9JQb/0V4WKAlvPSZplPhMQBr+UCv4+AcrLcD\n4hXDs6OZ6qbkwHkaSmV8WE8CAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "sign_alg": "ECDSA P-256",
+    "encrypt_alg": "RSA-4096"
+  },
+  "how": "Made by the agent in its own session with openssl (P-256 signing, RSA-4096 encryption). Only the public halves are here; the private halves stay outside the repository, mode 600. fingerprint is sha256 of the encryption key's SPKI, signing_fingerprint of the signing key's (first 16 hex). A session key: it ends with its session. Replaces cl-6.conductor-sw (site/keys/cl-6.conductor-sw.json)."
+}
