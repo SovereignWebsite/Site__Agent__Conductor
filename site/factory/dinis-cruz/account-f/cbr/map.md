@@ -57,9 +57,9 @@ The rest of the organisation (about 40 repositories) is SGraph (SGraph-AI__*, SG
 **Not now.** CBR has no live infrastructure of ours to manage: the live thecyberboardroom.com is 2024 code, the brochure deploys through the Factory's pipeline, and the vault layer is SG/Send's. Revisit if CBR gets its own domain moves, deploys or a customer tenant.
 
 ## 6. What Dinis must attach or decide
-1. **The brochure:** may I become its editor (taking it over from startups.b), and in which session (a new one from cl-6.maestro, with Site__Startups__The-Cyber-Boardroom attached for push)?
+1. ~~The brochure~~: Dinis, 26 Nov: take it over and build it as the replacement for thecyberboardroom.com. Done in this session (Site__Startups__The-Cyber-Boardroom 6c47722).
 2. **thecyberboardroom.com:** keep the 2024 site live, replace it with the Sovereign Website site, or point it at the brochure? Who holds the domain and DNS?
-3. **cbr-website-beta:** is it private, and should a CBR session see it?
+3. **cbr-website-beta:** Dinis says everything is public; GitHub shows no such repository to this account, so it may have been renamed or removed. Its releases remain on PyPI.
 4. **The board pack:** confirm the first board pack: for whom (a board receiving one, a CISO producing one, or both), and built on SG/Send vaults plus RiskMandate ABPs plus the risk register brief?
 5. **The July 2026 arrangement** naming CBR as Operator: is it current, and may it be stated in public?
 6. **"A security conductor":** cl-6.maestro read your words as "a second conductor"; confirm.

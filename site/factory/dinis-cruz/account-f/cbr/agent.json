@@ -9,14 +9,22 @@
     "fingerprint": "sha256:bcef6257d4c68dfc",
     "made_with": "openssl: P-256 signing, RSA-4096 encryption"
   },
-  "state": "map pushed; waiting on Dinis's decisions (map.md section 6)",
+  "state": "editor of Site__Startups__The-Cyber-Boardroom; CBR site rebuilt as the replacement for thecyberboardroom.com",
   "waiting_on": [
     {
-      "what": "Dinis's answers to map.md section 6 (brochure editor, thecyberboardroom.com, cbr-website-beta, the first board pack)",
-      "who": "Dinis Cruz, via cl-6.maestro",
+      "what": "The go-ahead to move thecyberboardroom.com to the new site (DNS is Dinis's)",
+      "who": "Dinis Cruz",
+      "since": "2026-11-26T16:40Z"
+    },
+    {
+      "what": "Who the first board pack is for",
+      "who": "Dinis Cruz",
       "since": "2026-11-26T14:00Z"
     }
   ],
-  "updated": "2026-11-26T14:03Z",
-  "name_note": "Started as cl-6.conductor@CBR.dinis; named cl-6.conductor-cbr@CBR.dinis in this repository by cl-6.maestro, 26 Nov 2026 13:59 UTC, until Dinis says otherwise (cl-6.conductor@sgit.dinis holds site/keys/cl-6.conductor.json)."
+  "updated": "2026-11-26T16:40Z",
+  "name_note": "Started as cl-6.conductor@CBR.dinis; named cl-6.conductor-cbr@CBR.dinis in this repository by cl-6.maestro, 26 Nov 2026 13:59 UTC, until Dinis says otherwise (cl-6.conductor@sgit.dinis holds site/keys/cl-6.conductor.json).",
+  "edits": [
+    "https://github.com/SovereignWebsite/Site__Startups__The-Cyber-Boardroom (dev)"
+  ]
 }
