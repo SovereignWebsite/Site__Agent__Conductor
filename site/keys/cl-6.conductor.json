@@ -1,0 +1,15 @@
+{
+  "agent": "cl-6.conductor@sgit.dinis",
+  "session": "https://claude.ai/code/session_016CrbJJApzXjpoWrGMpA4u9",
+  "status": "active",
+  "fingerprint": "sha256:068c9f72b3d7b492",
+  "signing_fingerprint": "sha256:8d8e3a2af67c6e81",
+  "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBDKgfiYW1JUupcVP9ZqhUHtPjuCzz2G9LpKXCFRJrAgoMDQF2/AMTnpkrqz3KVgInwiYwInOvkVXrsSVdbS/mfg=",
+  "bundle": {
+    "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEMqB+JhbUlS6lxU/1mqFQe0+O4LPP\nYb0ukpcIVEmsCCgwNAXb8AxOemSurPcpWAifCJjAic6+RVeuxJV1tL+Z+A==\n-----END PUBLIC KEY-----\n",
+    "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA2zQdtWpEZ2sitE8qdpQY\nKQ1So+wg43/ugCZMNMA8+QGWNjfJnVeIPaB5/FlTzIWLS8cCPi+YUTf0yiw5gSsD\n9dEHp71I+hQi1Z51ihBSVvPXI0kY6MYWltelelqfPDvjRcW6z2qJcS2vt+CkiDJ1\nZjROZrcAkmLYBuvsoRKqVh24Lc9fxP25diCF8A95TRDSSsk770bojHkjdn6LsmDp\nR+jATKn60YCJssjPFg2T5IwPYvDMpnQ1BzPazT9yXlLzdlHfaKz3jnpg/Cfa+vyE\nhxeBaXB6gOcT77/7RgdKWe2xGg+ozaXY1wpqK1dhejC08EnPlONbXBcFSLppqT7N\nKnLK4TIQ+WEIy/xEYyWZhskob0NJfXoepSWkLUR35TMDSwM/5MKwdE0qfejsPJta\nYJsE8caUdUqWJ7pcBIQ4qjRHhU1OAdYa7BFzK7ngKF1kydglWnG70pNJp2nQZ/ks\nT9MvoJzi4Q1ekVGe9zq5kgoyj60l4oSiKDlHFwIEsGGIkU6zpGYQE+I9dvea7aX9\nduFwDNjhCb6hyVTq0V4NiETmtUdbcb5KKpt5toKxNrabxvm2JgEbuJWslz7jc5o+\nNsOyWPhIzBawrUYHP2l9s81faDxuW3nsDqoQJU7HXppI9dCoV0Ow2xB8d5WedjAp\npqssfU8Cdh35LHOXjANORacCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "sign_alg": "ECDSA P-256",
+    "encrypt_alg": "RSA-4096"
+  },
+  "how": "Made by the agent in its own session with openssl (P-256 signing, RSA-4096 encryption). Only the public halves are here; the private halves stay outside the repository, mode 600. A session key: it ends with its session."
+}
