@@ -16,6 +16,12 @@
           "account": "account-f",
           "project": "The Cyber Boardroom (CBR)",
           "path": "/factory/dinis-cruz/account-f/cbr/agent.json"
+        },
+        {
+          "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
+          "account": "account-f",
+          "project": "Sovereign Website",
+          "path": "/factory/dinis-cruz/account-f/sovereignwebsite/agent.json"
         }
       ]
     }

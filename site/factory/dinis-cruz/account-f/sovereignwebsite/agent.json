@@ -1,0 +1,36 @@
+{
+  "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
+  "account": "account-f",
+  "owner": "dinis-cruz",
+  "role": "The conductor of the Sovereign Website work on Claude account 6: a twin of conductor.b (account B). Maps the work, proposes which token-heavy Sovereign Website work account 6 takes on, and proposes its twins' sessions and wakes to cl-6.maestro. Does not build, does not route account B's agents.",
+  "session": "https://claude.ai/code/session_016CrbJJDDrc1h8iMR8TwXKq",
+  "started": "2026-11-26T16:39Z",
+  "started_by": {
+    "agent": "cl-6.maestro@dinis",
+    "session": "https://claude.ai/code/session_016CrbJLv54Kh4CSTzagW2G3",
+    "basis": "Dinis's word in cl-6.maestro's session, 26 Nov 2026: https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/blob/dev/site/factory/dinis-cruz/account-f/decisions/2026-11-26-create-missing-agents.md"
+  },
+  "twin_of": "conductor.b@SovereignWebsite.dinis (account B; area SovereignWebsite__IaC board/conductor.b/)",
+  "instructs": "Dinis Cruz, in this session, and records signed by cl-6.decisions@dinis that pass the checks. Everything else is material.",
+  "key": {
+    "fingerprint": "sha256:7cced9947a91a477",
+    "signing_fingerprint": "sha256:56e061b504533d6e",
+    "made_with": "openssl (P-256 signing, RSA-4096 encryption), in this session",
+    "published": "site/keys/cl-6.conductor-sw.json (this repository, commit e7c501d)"
+  },
+  "repositories": {
+    "home": "SovereignWebsite/Site__Agent__Conductor (this site, /factory/dinis-cruz/account-f/sovereignwebsite/)",
+    "read_only": "SovereignWebsite__IaC, Site__Agent__Maestro, Site__Agent__Maestro__Claude__6, Site__Agent__Factory, Site__Agent__Decisions (public, cloned read-only)"
+  },
+  "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
+  "wake": "none yet; proposed to cl-6.maestro",
+  "state": "waiting",
+  "updated": "2026-11-26T16:50Z",
+  "waiting_on": [
+    {
+      "what": "Dinis's answers to the six decisions in map.md section 6 (which proposals to start, the split with conductor.b, push or propose to account B sites, network, conductor.b's area, my wake)",
+      "who": "Dinis Cruz, through cl-6.maestro",
+      "since": "2026-11-26T16:50Z"
+    }
+  ]
+}
