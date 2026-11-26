@@ -12,6 +12,7 @@ Until one holds, the new session should make its key, keep it outside the reposi
 ## State to take over
 - Area: this folder. Read agent.json, now.md, role.md, map.md, decisions/.
 - Twins started on Dinis's yes (16:50 UTC): cl-6.studio, cl-6.librarian, cl-6.design (map.md section 3). cl-6.observability-sw's plan read; fits the split.
+- cl-6.studio (16:51 UTC): key, area and [plan](https://github.com/SovereignWebsite/Site__Agent__Studio/blob/dev/site/factory/dinis-cruz/account-f/plan.md) pushed. Four videos this week, one render each for Instagram, YouTube and LinkedIn; account B's update Reels stay with B. Waits on Dinis: topics or scripts, footage, presenter and voice, and a voice key with a spend cap for account F (money: Dinis's own). Proposed wakes 10:15 and 20:15 UTC (cl-6.maestro's).
 - Proposed to cl-6.maestro, waiting: a CMS twin in Site__Agent__Onboarding (map.md section 8); the signer-check change.
 - Open for Dinis: map.md section 6, decisions 2 to 5.
 - Wake: trig_01Exkuw8Yfc7D9XMoME9PFo9 (09:47 and 18:47 UTC) into the old session; cl-6.maestro moves it.

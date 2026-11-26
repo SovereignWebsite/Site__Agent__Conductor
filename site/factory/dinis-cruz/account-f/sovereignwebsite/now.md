@@ -11,6 +11,7 @@
 
 ## Handing over
 - Dinis, about 16:55 UTC: recycle this session as cl-6.conductor@SovereignWebsite.dinis. Handover: [sessions/2026-11-26-first/handover.md](sessions/2026-11-26-first/handover.md); asked cl-6.maestro to start the new session. Its key needs one of three routes first (in the handover).
+- cl-6.studio (16:51 UTC): key, area and [plan](https://github.com/SovereignWebsite/Site__Agent__Studio/blob/dev/site/factory/dinis-cruz/account-f/plan.md) pushed. Four videos this week, one render each for Instagram, YouTube and LinkedIn; account B's update Reels stay with B. Waits on Dinis: topics or scripts, footage, presenter and voice, and a voice key with a spend cap for account F (money: Dinis's own). Proposed wakes 10:15 and 20:15 UTC (cl-6.maestro's).
 
 ## Open
 1. Dinis, 16:48 UTC: "yes, start all three: studio, librarian, design rounds" ([record](decisions/2026-11-26-start-studio-librarian-design.md)). cl-6.maestro started all three at 16:50 UTC (sessions in map.md section 3); it sets their wakes, and they report to it and to me. Decisions 2 to 5 in map.md section 6 still open.
