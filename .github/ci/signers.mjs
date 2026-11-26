@@ -8,11 +8,14 @@
 //     must be the session published with that key. A key counts if it is live in the Factory's team/keys.json
 //     (fetched from its dev branch now, so a key not yet published fails), or published by this repository
 //     itself, one file per agent at site/keys/<name>.json (<name> is the agent id before the @, e.g.
-//     site/keys/strategy.b.json), as the files were BEFORE the commit (its first parent), so a commit cannot
+//     site/keys/strategy.b.json) or, where that short name is taken in a shared repository, under the full agent id
+//     (site/keys/cl-6.conductor@SovereignWebsite.dinis.json; Dinis, 26 Nov 2026, in cl-6.conductor-sw's session:
+//     a role suffix repeating the @project is redundant), as the files were BEFORE the commit (its first parent), so a commit cannot
 //     vouch for itself. Dinis, 23 Nov 2026 (record 2026-11-23__asks-2-8-31-revised): agents publish their keys
 //     in their own repositories. The one exception, as the Factory's keys rule: a commit that only adds one new
-//     file site/keys/<name>.json, for the agent named in its own Agent: trailer, verifies against that key alone
-//     (an agent publishing its own key). A site key for an agent that has a live entry with a different key in
+//     file site/keys/<name>.json or site/keys/<full agent id>.json, for the agent named in its own Agent: trailer,
+//     verifies against that key alone (an agent publishing its own key), and only while that agent has no live key
+//     in this repository already (a second file cannot slip a second key in under an existing name). A site key for an agent that has a live entry with a different key in
 //     the Factory's team/keys.json does not count: a site cannot claim a team identity it does not hold;
 //   - without one: a person's commit (an owner editing on GitHub, or the Factory's own seeding). It must be signed
 //     and verified by GitHub (asked through the API with the workflow's token); it is listed in the summary. The same
@@ -39,7 +42,8 @@ export const PEOPLE = '.github/ci/people.json';
 // The Factory's own App, which seeds and refreshes files in every site (Org apply); its commits carry no Agent: trailer.
 export const FACTORY_BOT = 'agenticcells-site-factory[bot]';
 export const isPerson = (p) => !!p?.login && p.type === 'User' && p.login.toLowerCase() !== 'claude' && !/\[bot\]$/i.test(p.login);
-const keyFile = (agent) => `${SITE_KEYS}/${agent.split('@')[0]}.json`;
+// Where a site may publish an agent's key: under the name before the @, or under the full agent id.
+const keyFiles = (agent) => [`${SITE_KEYS}/${agent.split('@')[0]}.json`, `${SITE_KEYS}/${agent}.json`];
 const AGENT = /^[a-z0-9]+(?:[.-][a-z0-9]+)*@[a-z0-9.-]+$/i;
 const live = (k) => k.status !== 'superseded' && k.status !== 'retired';
 // A key's signing fingerprint, worked out from the key itself (sha256 of its public key), never read from the file.
@@ -57,8 +61,8 @@ export async function checkSigners({ cwd = process.cwd(), before, after, keys, p
   const tryGit = (...a) => { try { return execFileSync('git', a, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }).trim(); } catch { return null; } };
   // The keys this repository publishes at a revision: every site/keys/<name>.json whose agent matches its file name.
   const keysAt = (rev) => {
-    const names = lines(tryGit('ls-tree', '--name-only', `${rev}:${SITE_KEYS}`) || '').filter((f) => /^[a-z0-9.-]+\.json$/.test(f));
-    return names.flatMap((f) => { try { const k = JSON.parse(tryGit('show', `${rev}:${SITE_KEYS}/${f}`)); return k && k.agent && keyFile(k.agent) === `${SITE_KEYS}/${f}` ? [k] : []; } catch { return []; } });
+    const names = lines(tryGit('ls-tree', '--name-only', `${rev}:${SITE_KEYS}`) || '').filter((f) => /^[A-Za-z0-9.@-]+\.json$/.test(f));
+    return names.flatMap((f) => { try { const k = JSON.parse(tryGit('show', `${rev}:${SITE_KEYS}/${f}`)); return k && k.agent && keyFiles(k.agent).includes(`${SITE_KEYS}/${f}`) ? [k] : []; } catch { return []; } });
   };
   // A site cannot claim a team identity it does not hold: a site key whose agent has a live entry in the Factory's
   // team/keys.json with a different key does not count (security.b, review 029 on aef6bcc).
@@ -85,11 +89,13 @@ export async function checkSigners({ cwd = process.cwd(), before, after, keys, p
     const file = join(dir, `allowed-${n++}`); writeFileSync(file, rows.join('\n') + '\n');
     return { file, sessionOf };
   };
-  // An agent publishing its own key: the commit only adds one new file, site/keys/<name>.json, for the trailer's agent.
+  // An agent publishing its own key: the commit only adds one new file, site/keys/<name>.json or
+  // site/keys/<full agent id>.json, for the trailer's agent, which has no live key in this repository yet.
   const selfPublished = (c, agent) => {
     const changes = lines(git('diff-tree', '--no-commit-id', '--name-status', '-r', c));
-    if (changes.length !== 1 || changes[0] !== `A\t${keyFile(agent)}`) return null;
-    try { const k = JSON.parse(git('show', `${c}:${keyFile(agent)}`)); return k.agent === agent ? k : null; } catch { return null; }
+    const file = changes.length === 1 ? keyFiles(agent).find((f) => changes[0] === `A\t${f}`) : null;
+    if (!file || keysAt(`${c}^`).some((k) => k.agent === agent && live(k))) return null;
+    try { const k = JSON.parse(git('show', `${c}:${file}`)); return k.agent === agent ? k : null; } catch { return null; }
   };
   try {
     const ok = [], people = [], overrides = [], refused = [];
