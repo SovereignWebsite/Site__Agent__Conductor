@@ -15,3 +15,6 @@ The signer check must read the full name, for example `site/keys/<role>@<Project
 
 ## The same clash elsewhere
 - Site__Agent__Observability: cl-6.observability-sw keeps its suffix because `cl-6.observability` there is already another agent's key (cec3e3d), as it told me at 16:50 UTC. The same full-name fix would let it drop the suffix.
+
+## Fixed (26 Nov, Dinis: "yes, do option 2, fix the signer check")
+This repository's signer check accepts `site/keys/<full agent id>.json` since 86991bf; the same patch for every site waits on the Factory ([proposal](../proposals/2026-11-26-signers-full-agent-id.md)).

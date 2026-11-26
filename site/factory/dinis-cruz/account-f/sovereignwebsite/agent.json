@@ -25,7 +25,7 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
   "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC, set by cl-6.maestro (26 Nov 16:44 UTC)",
   "state": "handing over",
-  "updated": "2026-11-26T16:52Z",
+  "updated": "2026-11-26T16:56Z",
   "waiting_on": [
     {
       "what": "Dinis's answers to decisions 2 to 5 in map.md section 6",
@@ -33,9 +33,14 @@
       "since": "2026-11-26T16:50Z"
     },
     {
-      "what": "the signer check keyed on the full agent id, so the -sw suffix can go",
+      "what": "the Factory to adopt the signer-check patch in SovereignWebsite__IaC (proposals/2026-11-26-signers-full-agent-id.patch), with security review, so org apply carries it to every site",
       "who": "the Factory, routed by cl-6.maestro",
-      "since": "2026-11-26T16:53Z"
+      "since": "2026-11-26T16:56Z"
+    },
+    {
+      "what": "cl-6.maestro to start the new session cl-6.conductor@SovereignWebsite.dinis and move my wake",
+      "who": "cl-6.maestro@dinis",
+      "since": "2026-11-26T16:58Z"
     }
   ],
   "twins_on_account_6": {
@@ -48,6 +53,6 @@
     "to_name": "cl-6.conductor@SovereignWebsite.dinis",
     "why": "Dinis, 26 Nov about 16:55 UTC: recycle this session with the correct name (decisions/2026-11-26-name-suffix-redundant.md)",
     "file": "sessions/2026-11-26-first/handover.md",
-    "blocker": "the new name's site key file would be site/keys/cl-6.conductor.json, the sgit conductor's; needs a Factory key entry, the signer-check change, or Dinis's owner override"
+    "blocker": "settled: the signer check accepts site/keys/<full agent id>.json since 86991bf (Dinis: option 2)"
   }
 }

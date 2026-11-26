@@ -2,7 +2,10 @@
 
 Under the session handover protocol v1 (Site__Agent__Maestro `site/factory/dinis-cruz/account-a/notes/2026-11-25-session-handover-protocol.md`). Reason: Dinis, in this session at about 16:55 UTC: "ok, then if you can't rename, can you recycle this session with the correct name". The correct name, by his rule ([decisions/2026-11-26-name-suffix-redundant.md](../../decisions/2026-11-26-name-suffix-redundant.md)): **cl-6.conductor@SovereignWebsite.dinis**. The old name, cl-6.conductor-sw@SovereignWebsite.dinis, retires with this session.
 
-## The new session's one blocker: its key
+## Settled: the new session's key (Dinis chose option 2)
+Done in commit 86991bf ([proposal](../../proposals/2026-11-26-signers-full-agent-id.md)): the signer check here now accepts `site/keys/<full agent id>.json`. **Publish your key alone in your first commit as `site/keys/cl-6.conductor@SovereignWebsite.dinis.json`.** The rest of this section is the history of the choice.
+
+## Was: the new session's one blocker: its key
 The signer check files a site key as `site/keys/<name before the @>.json`, and `site/keys/cl-6.conductor.json` is the sgit conductor's. The new session cannot publish its key here under its own name. Its commits pass the check only by one of:
 1. **A key entry in the Factory's team/keys.json** under the full name `cl-6.conductor@SovereignWebsite.dinis` (the check matches Factory keys by full name). An IaC request, by the new session, through cl-6.maestro.
 2. **The signer check keyed on the full agent id** (a seeded-file change in SovereignWebsite__IaC; already asked of cl-6.maestro to route). This also frees the CBR and observability twins' suffixes.
@@ -21,7 +24,7 @@ Until one holds, the new session should make its key, keep it outside the reposi
 None to re-seal: this session holds only its own signing and encryption keys, which end with it. No vault or lane key.
 
 ## Checklist for the new session (protocol step 7)
-- Can you push signed commits? (Not until the key blocker above is settled.)
+- Can you push signed commits? (Your key file: site/keys/cl-6.conductor@SovereignWebsite.dinis.json.)
 - Is your key published, and where?
 - Sealed keys: none to receive.
 - Do you have the wake?

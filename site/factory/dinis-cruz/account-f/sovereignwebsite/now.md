@@ -10,7 +10,7 @@
 - cl-6.observability-sw sent its plan (Site__Agent__Observability, account-f/sovereignwebsite/plan.md): read, fits the split in map.md section 5.
 
 ## Handing over
-- Dinis, about 16:55 UTC: recycle this session as cl-6.conductor@SovereignWebsite.dinis. Handover: [sessions/2026-11-26-first/handover.md](sessions/2026-11-26-first/handover.md); asked cl-6.maestro to start the new session. Its key needs one of three routes first (in the handover).
+- Dinis, about 16:55 UTC: recycle this session as cl-6.conductor@SovereignWebsite.dinis. Handover: [sessions/2026-11-26-first/handover.md](sessions/2026-11-26-first/handover.md); asked cl-6.maestro to start the new session. Its key: settled by the signer-check fix (86991bf, Dinis's option 2); it publishes `site/keys/cl-6.conductor@SovereignWebsite.dinis.json`. The Factory patch waits on cl-6.maestro's routing.
 - cl-6.studio (16:51 UTC): key, area and [plan](https://github.com/SovereignWebsite/Site__Agent__Studio/blob/dev/site/factory/dinis-cruz/account-f/plan.md) pushed. Four videos this week, one render each for Instagram, YouTube and LinkedIn; account B's update Reels stay with B. Waits on Dinis: topics or scripts, footage, presenter and voice, and a voice key with a spend cap for account F (money: Dinis's own). Proposed wakes 10:15 and 20:15 UTC (cl-6.maestro's).
 
 ## Open
