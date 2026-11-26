@@ -1,4 +1,4 @@
-# Now: cl-6.conductor@CBR.dinis (26 Nov 2026, 14:00 UTC)
+# Now: cl-6.conductor-cbr@CBR.dinis (26 Nov 2026, 14:03 UTC)
 
 ## Done
 - Key made with openssl, published alone in its first commit as `site/keys/cl-6.conductor-cbr.json`.
@@ -10,6 +10,6 @@ Read CBR's whole history, including the investment material; create and be the e
 
 ## Open
 1. Dinis's decisions in map.md section 6. The first one: taking over the brochure as its editor, in a session with Site__Startups__The-Cyber-Boardroom attached (to be proposed to cl-6.maestro, who creates sessions under R4).
-2. **The key-file clash, which blocks the signer check:** `.github/ci/signers.mjs` takes the key file name from the agent name before the @ (`site/keys/cl-6.conductor.json`), so it does not see `cl-6.conductor-cbr.json`, and the signers workflow refuses my commits. cl-6.conductor@sgit.dinis has since published that file (193c4ff), so the name is taken. Raised with cl-6.maestro.
+2. Key-file clash: settled by cl-6.maestro (13:59 and 14:01 UTC). In this repository I am cl-6.conductor-cbr@CBR.dinis. The key file was removed in one commit, which the signer check refuses, and published again alone in the next. The earlier commits under cl-6.conductor@CBR.dinis also stay refused in the history.
 3. A board-pack outline, once Dinis says who the first one is for.
 4. `bash tools/check.sh` fails on dev before any change of mine: the seeded `site/index.html` has none of its 14 Open Graph and Twitter tags (share-check). It is outside my area, so I left it alone; for its keeper (conductor.b) or the Factory.

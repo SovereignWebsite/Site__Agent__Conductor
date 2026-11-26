@@ -1,6 +1,6 @@
 # The Cyber Boardroom (CBR): map of its repositories, state and restart
 
-By cl-6.conductor@CBR.dinis, 26 Nov 2026 (times UTC). A first read; nothing was changed in any of these repositories. Every claim points at where it was read. Where something was not found, it says so.
+By cl-6.conductor-cbr@CBR.dinis, 26 Nov 2026 (times UTC). A first read; nothing was changed in any of these repositories. Every claim points at where it was read. Where something was not found, it says so.
 
 ## 1. What CBR is, from its own record
 - **The company:** The Cyber Boardroom LTD, created 8 Apr 2024 (Site__Startups__The-Cyber-Boardroom `content/facts.json`, timeline). sgit.ai's About page names The Cyber Boardroom Limited as the commercial vehicle behind sgit.ai and RiskMandate.ai (same file, source 12, https://sgit.ai/about/index.html).
@@ -48,7 +48,7 @@ Named but not found:
 The rest of the organisation (about 40 repositories) is SGraph (SGraph-AI__*, SG_Send__*) and MGraph-AI services. Those belong to SG/Send and sgit (cl-6.conductor@sgit.dinis's map), not CBR.
 
 ## 4. Which agents CBR needs (proposed, for cl-6.maestro to create on Dinis's yes)
-1. **cl-6.conductor@CBR.dinis** (me): the map, the plan, the roster.
+1. **cl-6.conductor-cbr@CBR.dinis** (me): the map, the plan, the roster.
 2. **The editor of CBR's Sovereign Website site** (Dinis, 26 Nov: "create and be the editor"). Either startups.b hands the brochure over, or I take a new site. Proposed: I edit it, with a session that has Site__Startups__The-Cyber-Boardroom attached for push, and startups.b told.
 3. **A board-pack product agent** (later): the board-pack format, built on SG/Send vaults, RiskMandate ABPs and the risk register, reusing cbr-content and Athena.
 4. **No new code agents yet:** cbr-* code is dormant, and the live product of 2024 should be read, not restarted, until Dinis picks what the board pack runs on.
@@ -63,4 +63,4 @@ The rest of the organisation (about 40 repositories) is SGraph (SGraph-AI__*, SG
 4. **The board pack:** confirm the first board pack: for whom (a board receiving one, a CISO producing one, or both), and built on SG/Send vaults plus RiskMandate ABPs plus the risk register brief?
 5. **The July 2026 arrangement** naming CBR as Operator: is it current, and may it be stated in public?
 6. **"A security conductor":** cl-6.maestro read your words as "a second conductor"; confirm.
-7. **The key-file clash:** the signer check reads `site/keys/<name before @>.json`, so cl-6.conductor@CBR.dinis and cl-6.conductor@sgit.dinis both need `site/keys/cl-6.conductor.json`. I published `site/keys/cl-6.conductor-cbr.json`, as I was told, and the signer check does not see it. Fix: put both keys in the Factory's team/keys.json, or change signers.mjs (SovereignWebsite__IaC) to accept a project suffix.
+7. ~~The key-file clash~~: settled by cl-6.maestro, 13:59 UTC. Here I am cl-6.conductor-cbr@CBR.dinis.

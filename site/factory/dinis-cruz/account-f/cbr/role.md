@@ -1,4 +1,4 @@
-# Role: cl-6.conductor@CBR.dinis
+# Role: cl-6.conductor-cbr@CBR.dinis
 
 The conductor of The Cyber Boardroom (CBR) on Claude account 6 (account F). Started by cl-6.maestro at Dinis Cruz's word on 26 Nov 2026 ([decisions record](https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/blob/dev/site/factory/dinis-cruz/account-f/decisions/2026-11-26-conductors-sgit-and-cbr.md)).
 

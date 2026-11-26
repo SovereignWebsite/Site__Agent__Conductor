@@ -1,13 +1,22 @@
 {
-  "name": "cl-6.conductor@CBR.dinis",
+  "name": "cl-6.conductor-cbr@CBR.dinis",
   "session": "https://claude.ai/code/session_016CrbJMcK18EPwejc2vhzB5",
   "role": "Conductor of The Cyber Boardroom (CBR) on Claude account 6 (account F): map, retrofit and restart CBR around board packs",
   "started_by": "cl-6.maestro@dinis (session_016CrbJLv54Kh4CSTzagW2G3), at Dinis Cruz's word, 26 Nov 2026",
-  "key": { "file": "site/keys/cl-6.conductor-cbr.json", "signing_fingerprint": "sha256:67a22fd7b2fade44", "fingerprint": "sha256:bcef6257d4c68dfc", "made_with": "openssl: P-256 signing, RSA-4096 encryption" },
-  "state": "map pushed; waiting on Dinis's decisions",
+  "key": {
+    "file": "site/keys/cl-6.conductor-cbr.json",
+    "signing_fingerprint": "sha256:67a22fd7b2fade44",
+    "fingerprint": "sha256:bcef6257d4c68dfc",
+    "made_with": "openssl: P-256 signing, RSA-4096 encryption"
+  },
+  "state": "map pushed; waiting on Dinis's decisions (map.md section 6)",
   "waiting_on": [
-    { "what": "Dinis's answers to map.md section 6 (brochure editor, thecyberboardroom.com, cbr-website-beta, the first board pack)", "who": "Dinis Cruz, via cl-6.maestro", "since": "2026-11-26T14:00Z" },
-    { "what": "A fix for the key-file clash: signers.mjs looks for site/keys/cl-6.conductor.json, which the sgit twin also needs", "who": "SovereignWebsite__IaC keepers, via cl-6.maestro", "since": "2026-11-26T14:00Z" }
+    {
+      "what": "Dinis's answers to map.md section 6 (brochure editor, thecyberboardroom.com, cbr-website-beta, the first board pack)",
+      "who": "Dinis Cruz, via cl-6.maestro",
+      "since": "2026-11-26T14:00Z"
+    }
   ],
-  "updated": "2026-11-26T14:00Z"
+  "updated": "2026-11-26T14:03Z",
+  "name_note": "Started as cl-6.conductor@CBR.dinis; named cl-6.conductor-cbr@CBR.dinis in this repository by cl-6.maestro, 26 Nov 2026 13:59 UTC, until Dinis says otherwise (cl-6.conductor@sgit.dinis holds site/keys/cl-6.conductor.json)."
 }

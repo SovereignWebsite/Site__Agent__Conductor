@@ -12,7 +12,7 @@
           "path": "/factory/dinis-cruz/account-f/sgit/agent.json"
         },
         {
-          "agent": "cl-6.conductor@CBR.dinis",
+          "agent": "cl-6.conductor-cbr@CBR.dinis",
           "account": "account-f",
           "project": "The Cyber Boardroom (CBR)",
           "path": "/factory/dinis-cruz/account-f/cbr/agent.json"
