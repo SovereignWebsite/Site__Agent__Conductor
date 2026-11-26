@@ -23,9 +23,9 @@
     "read_only": "SovereignWebsite__IaC, Site__Agent__Maestro, Site__Agent__Maestro__Claude__6, Site__Agent__Factory, Site__Agent__Decisions (public, cloned read-only)"
   },
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
-  "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9 (09:47 and 18:47 UTC) fires into the previous session until cl-6.maestro moves it here",
+  "wake": "trig_014R2LQTMRT45UGo1dkSk6sm, 09:47 and 18:47 UTC, into this session, set by cl-6.maestro (26 Nov 17:04 UTC); the old trig_01Exkuw8Yfc7D9XMoME9PFo9 disabled and the previous session archived",
   "state": "active",
-  "updated": "2026-11-26T17:01Z",
+  "updated": "2026-11-26T17:03Z",
   "waiting_on": [
     {
       "what": "Dinis's answers to decisions 2 to 5 in map.md section 6",
@@ -33,14 +33,9 @@
       "since": "2026-11-26T16:50Z"
     },
     {
-      "what": "the Factory to adopt the signer-check patch in SovereignWebsite__IaC (proposals/2026-11-26-signers-full-agent-id.patch), with security review, so org apply carries it to every site; cl-6.security's low finding (agent ids matched case-insensitively in the live-key guard) fixed in the patch and here",
+      "what": "the Factory to adopt the signer-check patch in SovereignWebsite__IaC (proposals/2026-11-26-signers-full-agent-id.patch), with security review, so org apply carries it to every site; cl-6.security's low finding (agent ids matched case-insensitively in the live-key guard) fixed in the patch and here; waits on a route (router.a asleep), cl-6.maestro has told Dinis (17:04 UTC)",
       "who": "the Factory, routed by cl-6.maestro",
       "since": "2026-11-26T16:56Z"
-    },
-    {
-      "what": "cl-6.maestro to move the wake to this session and archive the previous one",
-      "who": "cl-6.maestro@dinis",
-      "since": "2026-11-26T17:01Z"
     }
   ],
   "twins_on_account_6": {

@@ -1,10 +1,11 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 17:01 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 17:03 UTC)
 
 ## Taken over
 - This session replaces cl-6.conductor-sw (session_016CrbJJDDrc1h8iMR8TwXKq), recycled under the correct name at Dinis's word ([handover](sessions/2026-11-26-first/handover.md)). Onboarded from restart.md, now.md, map.md, the handover and decisions/.
 - Key made with openssl (P-256 signing, RSA-4096 encryption), published alone in its first commit as `site/keys/cl-6.conductor@SovereignWebsite.dinis.json` (5996fb8). Signing sha256:48ab64664cee9e53, encryption sha256:cd516efe147e79e1. The -sw key is marked superseded.
 - cl-6.security's low finding on the signer-check patch: the live-key guard now compares agent ids without regard to case, so `G@X.y` cannot self-publish a second key beside `g`'s. Fixed in [the patch](proposals/2026-11-26-signers-full-agent-id.patch) (regenerated against SovereignWebsite__IaC dev 94b1625, with a new test that fails without the fix; `node test/run.mjs` passes) and in this repository's `.github/ci/signers.mjs`.
-- Waiting on cl-6.maestro to move the wake here and archive the previous session.
+- cl-6.maestro, 17:04 UTC: wake moved here (trig_014R2LQTMRT45UGo1dkSk6sm, 09:47 and 18:47 UTC); the old wake disabled and the previous session archived. The Factory patch waits on a route (router.a asleep); Dinis told.
+- For my next message to cl-6.security@dinis: the Factory-claim map in the signer check (factoryFps / notClaimed) also matches agent ids case-sensitively; no bypass seen, since signature principals are exact strings; left unchanged, for its view.
 
 ## Previous session (cl-6.conductor-sw), as it left it
 
