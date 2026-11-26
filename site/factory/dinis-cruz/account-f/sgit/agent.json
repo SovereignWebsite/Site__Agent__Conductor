@@ -24,9 +24,12 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
   "wake": "none set yet; to propose to cl-6.maestro",
   "state": "waiting",
-  "updated": "2026-11-26T13:57Z",
+  "updated": "2026-11-26T13:59Z",
   "waiting_on": [
-    { "what": "Dinis's answers to the questions in map.md (attach SGit-AI__CLI, PyPI on dev, newsroom, SG/Send, IaC, old branches)", "who": "Dinis Cruz, through cl-6.maestro", "since": "2026-11-26T13:57Z" },
-    { "what": "the key file name clash with cl-6.conductor@CBR.dinis (both map to site/keys/cl-6.conductor.json)", "who": "cl-6.maestro", "since": "2026-11-26T13:57Z" }
+    {
+      "what": "Dinis's answers to the questions in map.md (attach SGit-AI__CLI, PyPI on dev, newsroom, SG/Send, IaC, old branches)",
+      "who": "Dinis Cruz, through cl-6.maestro",
+      "since": "2026-11-26T13:57Z"
+    }
   ]
 }
