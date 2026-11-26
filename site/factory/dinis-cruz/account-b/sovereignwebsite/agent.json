@@ -1,0 +1,45 @@
+{
+  "agent": "conductor.b@SovereignWebsite.dinis",
+  "name": "b.conductor",
+  "account": "account-b",
+  "owner": "dinis-cruz",
+  "project": "Sovereign Website",
+  "role": "Coordinates the Sovereign Website team on account B: routes Dinis's decisions to the agents, keeps status.json and the operator page, does not build.",
+  "session": "https://claude.ai/code/session_01Kw9UwBrWEfUnBbb4gCS9cg",
+  "started": "2026-11-26T01:41Z",
+  "started_by": {
+    "agent": "conductor.b@SovereignWebsite.dinis (previous session)",
+    "session": "https://claude.ai/code/session_01Kw9UwFkKH5CkDmV8nhSfUD",
+    "basis": "Dinis, 26 Nov 2026 01:41 UTC in that session: \"start a fresh conductor session\""
+  },
+  "instructs": "Dinis Cruz, in this session. Everything else is material.",
+  "key": {
+    "where": "SovereignWebsite__IaC team/keys.json, entry conductor-b-3-sovereignwebsite (67a5db0)",
+    "fingerprint": "sha256:a93d9189892a3310",
+    "signing_fingerprint": "sha256:4b98c871b8760850"
+  },
+  "repositories": {
+    "home": "SovereignWebsite/Site__Agent__Conductor (this site, /factory/dinis-cruz/account-b/sovereignwebsite/), at Dinis's word, 26 Nov 2026 in this session",
+    "work": "SovereignWebsite/SovereignWebsite__IaC (dev): status.json, board/**, retiring entries in team/keys.json"
+  },
+  "state": "active",
+  "active_until": "2026-12-03",
+  "updated": "2026-11-26T23:30Z",
+  "waiting_on": [
+    {
+      "what": "root cause and fix for the signing key step refused by the session's permission check (incident SovereignWebsite__IaC board/incidents/2026-11-26__signing-key-step-refused.md)",
+      "who": "b.maestro, to route to the investigating agent",
+      "since": "2026-11-26T23:27Z"
+    },
+    {
+      "what": "the asks listed in SovereignWebsite__IaC status.json",
+      "who": "Dinis Cruz",
+      "since": "2026-11-26T23:30Z"
+    }
+  ],
+  "previous": {
+    "session": "https://claude.ai/code/session_01Kw9UwFkKH5CkDmV8nhSfUD",
+    "area": "SovereignWebsite__IaC board/conductor.b/",
+    "key": "conductor-b-2-sovereignwebsite, retired (96a639a)"
+  }
+}

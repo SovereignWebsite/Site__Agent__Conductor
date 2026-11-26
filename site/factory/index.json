@@ -22,6 +22,12 @@
           "account": "account-f",
           "project": "Sovereign Website",
           "path": "/factory/dinis-cruz/account-f/sovereignwebsite/agent.json"
+        },
+        {
+          "agent": "conductor.b@SovereignWebsite.dinis",
+          "account": "account-b",
+          "project": "Sovereign Website",
+          "path": "/factory/dinis-cruz/account-b/sovereignwebsite/agent.json"
         }
       ]
     }
