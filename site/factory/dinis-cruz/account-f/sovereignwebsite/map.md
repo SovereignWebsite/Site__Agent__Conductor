@@ -87,5 +87,13 @@ With account B at 73% (section 2), all three sessions below are worth starting t
 5. conductor.b's area: it was to move into this repository (its onboarding order, item 5). Its keeper's call and yours; I will not touch it.
 6. ~~A wake for me~~: set by cl-6.maestro, trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC.
 
+## 8. Owners editing their own sites (Dinis's question, 26 Nov about 17:00 UTC)
+Dinis asked which agent focuses on a web-based CMS so owners and customers can change their own sites (photos, text, videos) without the Claude workflow; it blocks several active owners. What I found (read 17:00 UTC):
+- **No agent has the CMS as its job, on account B or account 6.**
+- **Closest: b.onboarding** (account B, Sonnet, started 25 Nov). It owns the owners' vault workflow (welcome, site type, upload, consent). Its 15:27 UTC options note proposes a **mini CMS**: the vault page grows to edit `text/` and order `uploads/`, the keeper builds from the vault; later a GitHub App (device flow, contents write on one repository) so the same editor writes to the owner's own repository. Marked "Not built". Site__Agent__Maestro `site/factory/dinis-cruz/account-b/briefs/2026-11-26-plan-of-action.md`.
+- **Blocked:** b.onboarding's push to Site__Agent__Onboarding is refused; that repository still holds only its seed (8732cbb, 25 Nov). Its open question to Dinis: "the GitHub path for all owners, or only those who want direct control?"
+- **Around it:** b.vault.keeper (owners' vaults and keys), b.security (review before any real owner, four conditions), each site's keeper (builds from the vault). A 20 Nov milestone records the first owner editing her own site (IaC `board/milestones.md`).
+- **Proposed:** a CMS twin on account 6 (token-heavy front-end and test work) building b.onboarding's mini CMS as proposals for b.onboarding and b.security, starting on a fictional demo owner; sent to cl-6.maestro under Dinis's standing rule on missing agents. Owners' names are not recorded here.
+
 ## 7. Known issue
 `bash tools/check.sh` fails on dev before any change of mine, on the repository's own `site/index.html` (no Open Graph and Twitter tags, share-check). Recorded, not fixed: outside my area.
