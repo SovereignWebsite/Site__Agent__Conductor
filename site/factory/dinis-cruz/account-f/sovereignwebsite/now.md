@@ -1,15 +1,23 @@
-# Now: cl-6.conductor-sw@SovereignWebsite.dinis (26 Nov 2026, 16:50 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 17:01 UTC)
 
-## Done
+## Taken over
+- This session replaces cl-6.conductor-sw (session_016CrbJJDDrc1h8iMR8TwXKq), recycled under the correct name at Dinis's word ([handover](sessions/2026-11-26-first/handover.md)). Onboarded from restart.md, now.md, map.md, the handover and decisions/.
+- Key made with openssl (P-256 signing, RSA-4096 encryption), published alone in its first commit as `site/keys/cl-6.conductor@SovereignWebsite.dinis.json` (5996fb8). Signing sha256:48ab64664cee9e53, encryption sha256:cd516efe147e79e1. The -sw key is marked superseded.
+- cl-6.security's low finding on the signer-check patch: the live-key guard now compares agent ids without regard to case, so `G@X.y` cannot self-publish a second key beside `g`'s. Fixed in [the patch](proposals/2026-11-26-signers-full-agent-id.patch) (regenerated against SovereignWebsite__IaC dev 94b1625, with a new test that fails without the fix; `node test/run.mjs` passes) and in this repository's `.github/ci/signers.mjs`.
+- Waiting on cl-6.maestro to move the wake here and archive the previous session.
+
+## Previous session (cl-6.conductor-sw), as it left it
+
+### Done
 - Key made with openssl (P-256 signing, RSA-4096 encryption), published alone in its first commit as `site/keys/cl-6.conductor-sw.json` (e7c501d). Signing sha256:56e061b504533d6e, encryption sha256:7cced9947a91a477.
 - Area made and listed in `site/factory/index.json`.
 - First read of the Sovereign Website work, account B's agents, conductor.b's hand-over state and account 6's agents: [map.md](map.md).
 
-## Also
+### Also
 - Dinis, 16:49 UTC: a role suffix repeating the @project is redundant ([record](decisions/2026-11-26-name-suffix-redundant.md)); my "-sw" stays until the signer check keys on the full name (asked of cl-6.maestro to route to the Factory).
 - cl-6.observability-sw sent its plan (Site__Agent__Observability, account-f/sovereignwebsite/plan.md): read, fits the split in map.md section 5.
 
-## Handing over
+### Its hand-over notes
 - Dinis, about 16:55 UTC: recycle this session as cl-6.conductor@SovereignWebsite.dinis. Handover: [sessions/2026-11-26-first/handover.md](sessions/2026-11-26-first/handover.md); asked cl-6.maestro to start the new session. Its key: settled by the signer-check fix (86991bf, Dinis's option 2); it publishes `site/keys/cl-6.conductor@SovereignWebsite.dinis.json`. The Factory patch waits on cl-6.maestro's routing.
 - cl-6.studio (16:51 UTC): key, area and [plan](https://github.com/SovereignWebsite/Site__Agent__Studio/blob/dev/site/factory/dinis-cruz/account-f/plan.md) pushed. Four videos this week, one render each for Instagram, YouTube and LinkedIn; account B's update Reels stay with B. Waits on Dinis: topics or scripts, footage, presenter and voice, and a voice key with a spend cap for account F (money: Dinis's own). Proposed wakes 10:15 and 20:15 UTC (cl-6.maestro's).
 - cl-6.design (16:55 UTC): round 1 on the hub and sovereign-website.startups pushed for b.design's sign-off ([proposal](https://github.com/SovereignWebsite/Site__Agent__Design/blob/dev/site/factory/dinis-cruz/account-f/round-1/proposal.md), f66de06). Headline: the hub's five Car Buyer thumbnails are cropped; Sovereign Website's hero leaves a live site below the fold and says "not on sale yet" beside a lead button. Proposed wakes every 2 hours 08:40 to 20:40 UTC (cl-6.maestro's).

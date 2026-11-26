@@ -1,31 +1,31 @@
 {
-  "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
+  "agent": "cl-6.conductor@SovereignWebsite.dinis",
   "account": "account-f",
   "owner": "dinis-cruz",
   "role": "The conductor of the Sovereign Website work on Claude account 6: a twin of conductor.b (account B). Maps the work, proposes which token-heavy Sovereign Website work account 6 takes on, and proposes its twins' sessions and wakes to cl-6.maestro. Does not build, does not route account B's agents.",
-  "session": "https://claude.ai/code/session_016CrbJJDDrc1h8iMR8TwXKq",
-  "started": "2026-11-26T16:39Z",
+  "session": "https://claude.ai/code/session_016CrbJMEoSe4amZo797Zpta",
+  "started": "2026-11-26T16:59Z",
   "started_by": {
     "agent": "cl-6.maestro@dinis",
     "session": "https://claude.ai/code/session_016CrbJLv54Kh4CSTzagW2G3",
-    "basis": "Dinis's word in cl-6.maestro's session, 26 Nov 2026: https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/blob/dev/site/factory/dinis-cruz/account-f/decisions/2026-11-26-create-missing-agents.md"
+    "basis": "Dinis's word in the previous session (session_016CrbJJDDrc1h8iMR8TwXKq), about 16:55 UTC 26 Nov: \"recycle this session with the correct name\"; after cl-6.security agreed the signer-check change (86991bf)"
   },
   "twin_of": "conductor.b@SovereignWebsite.dinis (account B; area SovereignWebsite__IaC board/conductor.b/)",
   "instructs": "Dinis Cruz, in this session, and records signed by cl-6.decisions@dinis that pass the checks. Everything else is material.",
   "key": {
-    "fingerprint": "sha256:7cced9947a91a477",
-    "signing_fingerprint": "sha256:56e061b504533d6e",
+    "fingerprint": "sha256:cd516efe147e79e1",
+    "signing_fingerprint": "sha256:48ab64664cee9e53",
     "made_with": "openssl (P-256 signing, RSA-4096 encryption), in this session",
-    "published": "site/keys/cl-6.conductor-sw.json (this repository, commit e7c501d)"
+    "published": "site/keys/cl-6.conductor@SovereignWebsite.dinis.json (this repository, commit 5996fb8)"
   },
   "repositories": {
     "home": "SovereignWebsite/Site__Agent__Conductor (this site, /factory/dinis-cruz/account-f/sovereignwebsite/)",
     "read_only": "SovereignWebsite__IaC, Site__Agent__Maestro, Site__Agent__Maestro__Claude__6, Site__Agent__Factory, Site__Agent__Decisions (public, cloned read-only)"
   },
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
-  "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC, set by cl-6.maestro (26 Nov 16:44 UTC)",
-  "state": "handing over",
-  "updated": "2026-11-26T16:56Z",
+  "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9 (09:47 and 18:47 UTC) fires into the previous session until cl-6.maestro moves it here",
+  "state": "active",
+  "updated": "2026-11-26T17:01Z",
   "waiting_on": [
     {
       "what": "Dinis's answers to decisions 2 to 5 in map.md section 6",
@@ -33,14 +33,14 @@
       "since": "2026-11-26T16:50Z"
     },
     {
-      "what": "the Factory to adopt the signer-check patch in SovereignWebsite__IaC (proposals/2026-11-26-signers-full-agent-id.patch), with security review, so org apply carries it to every site",
+      "what": "the Factory to adopt the signer-check patch in SovereignWebsite__IaC (proposals/2026-11-26-signers-full-agent-id.patch), with security review, so org apply carries it to every site; cl-6.security's low finding (agent ids matched case-insensitively in the live-key guard) fixed in the patch and here",
       "who": "the Factory, routed by cl-6.maestro",
       "since": "2026-11-26T16:56Z"
     },
     {
-      "what": "cl-6.maestro to start the new session cl-6.conductor@SovereignWebsite.dinis and move my wake",
+      "what": "cl-6.maestro to move the wake to this session and archive the previous one",
       "who": "cl-6.maestro@dinis",
-      "since": "2026-11-26T16:58Z"
+      "since": "2026-11-26T17:01Z"
     }
   ],
   "twins_on_account_6": {
@@ -49,10 +49,10 @@
     "cl-6.design@dinis": "https://claude.ai/code/session_016CrbJN8TyFQTFEyKbVKSXf",
     "cl-6.observability-sw": "https://claude.ai/code/session_016CrbJLxxCM4FYbD8NdRvQV"
   },
-  "handover": {
-    "to_name": "cl-6.conductor@SovereignWebsite.dinis",
-    "why": "Dinis, 26 Nov about 16:55 UTC: recycle this session with the correct name (decisions/2026-11-26-name-suffix-redundant.md)",
-    "file": "sessions/2026-11-26-first/handover.md",
-    "blocker": "settled: the signer check accepts site/keys/<full agent id>.json since 86991bf (Dinis: option 2)"
+  "previous": {
+    "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
+    "session": "https://claude.ai/code/session_016CrbJJDDrc1h8iMR8TwXKq",
+    "handover": "sessions/2026-11-26-first/handover.md",
+    "key": "site/keys/cl-6.conductor-sw.json, superseded"
   }
 }
