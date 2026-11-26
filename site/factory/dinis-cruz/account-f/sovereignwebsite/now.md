@@ -9,6 +9,9 @@
 - Dinis, 16:49 UTC: a role suffix repeating the @project is redundant ([record](decisions/2026-11-26-name-suffix-redundant.md)); my "-sw" stays until the signer check keys on the full name (asked of cl-6.maestro to route to the Factory).
 - cl-6.observability-sw sent its plan (Site__Agent__Observability, account-f/sovereignwebsite/plan.md): read, fits the split in map.md section 5.
 
+## Handing over
+- Dinis, about 16:55 UTC: recycle this session as cl-6.conductor@SovereignWebsite.dinis. Handover: [sessions/2026-11-26-first/handover.md](sessions/2026-11-26-first/handover.md); asked cl-6.maestro to start the new session. Its key needs one of three routes first (in the handover).
+
 ## Open
 1. Dinis, 16:48 UTC: "yes, start all three: studio, librarian, design rounds" ([record](decisions/2026-11-26-start-studio-librarian-design.md)). cl-6.maestro started all three at 16:50 UTC (sessions in map.md section 3); it sets their wakes, and they report to it and to me. Decisions 2 to 5 in map.md section 6 still open.
 2. Wake set by cl-6.maestro: trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC. The three proposed sessions and six decisions went to Dinis through cl-6.maestro at 16:44 UTC.
