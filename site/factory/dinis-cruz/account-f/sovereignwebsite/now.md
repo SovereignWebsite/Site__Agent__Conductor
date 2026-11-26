@@ -1,4 +1,10 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 17:03 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 18:48 UTC)
+
+## Wake 18:48 UTC
+- My team's repositories unchanged since about 17:00 UTC (studio 2a9b3cc, design f66de06, onboarding 2b4c30c, observability b3ddbc9); IaC dev unchanged (94b1625, 15:49 UTC), so conductor.b's area and operator.json as last read.
+- cl-6.librarian: nothing pushed to Site__Agent__Library since its start at 16:50 UTC; asked cl-6.maestro to check it.
+- Account B started b.website and b.github-tool at 18:29 UTC (record a11d1d3). B's onboarding brief makes the GitHub browser tool phase 1 of the owners' CMS: it overlaps cl-6.onboarding's prototype ([map.md](map.md) section 8). Proposed: cl-6.onboarding offers its prototype to b.onboarding and b.github-tool as a proposal and builds no separate path meanwhile.
+- A message from cl-6.researcher (18:35 UTC) was for the PrompTugal conductor: redirected, not acted on.
 
 ## Taken over
 - This session replaces cl-6.conductor-sw (session_016CrbJJDDrc1h8iMR8TwXKq), recycled under the correct name at Dinis's word ([handover](sessions/2026-11-26-first/handover.md)). Onboarded from restart.md, now.md, map.md, the handover and decisions/.

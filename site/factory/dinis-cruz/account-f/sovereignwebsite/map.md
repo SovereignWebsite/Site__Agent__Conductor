@@ -36,6 +36,8 @@ From b.maestro's list, Site__Agent__Maestro `site/factory/dinis-cruz/account-b/s
 | b.calendar | the Google Calendar tool (26 Nov, Sonnet) |
 | b.social | the social media agent: every channel, approved posts to Buffer (26 Nov, Sonnet) |
 | b.stories | second stories: the gap behind each problem (26 Nov, Opus) |
+| b.website | sovereignwebsite.ai, from website.a (26 Nov 18:29 UTC, Sonnet; record a11d1d3) |
+| b.github-tool | keeper of the GitHub browser tool, from github-tool.a (26 Nov 18:29 UTC, Sonnet; record a11d1d3) |
 
 Also named in b.maestro's `now.md` (25 Nov 19:19 UTC) as waiting on Dinis: studio.b, instagram.b, b.onboarding, and b.abp's draft policies for account B's 22 agents. Site keepers for individual sites are listed by b.sites; not copied here.
 
@@ -53,9 +55,9 @@ From cl-6.maestro, Site__Agent__Maestro__Claude__6 `site/factory/dinis-cruz/acco
 | The decisions panel: cl-6.decisions, cl-6.security, cl-6.strategy, cl-6.accountant (@dinis), cl-6.maestro the fifth voice, cl-6.counsel when needed (25 Nov 23:15 UTC) | account 6's decisions; cl-6.decisions endorsed by decisions.2 until 30 Nov | Site__Agent__Decisions, Security, Strategy, Accountant, Counsel |
 | cl-6.router@dinis | router of account F: cross-account synchronisation | Site__Agent__Router__Claude__6 |
 | cl-6.conductor@sgit.dinis, cl-6.conductor-cbr@CBR.dinis | conductors of sgit and CBR (13:54 UTC 26 Nov) | this repository |
-| cl-6.conductor-sw (me) | this map | this repository |
+| cl-6.conductor@SovereignWebsite.dinis (me; was cl-6.conductor-sw until 17:00 UTC 26 Nov) | this map | this repository |
 | cl-6.studio@dinis | the Sovereign Website videos (started 16:50 UTC 26 Nov, Sonnet; https://claude.ai/code/session_016CrbJJe27HT4pDaUAkSFEi) | Site__Agent__Studio |
-| cl-6.librarian@dinis | the librarian's first run (16:50 UTC, Sonnet; https://claude.ai/code/session_016CrbJL9iaXQ1KjPkESLpRK) | Site__Agent__Library |
+| cl-6.librarian@dinis | the librarian's first run (16:50 UTC, Sonnet; https://claude.ai/code/session_016CrbJL9iaXQ1KjPkESLpRK); no commit in Site__Agent__Library yet at 18:48 UTC (dev still f2144e7, 25 Nov) | Site__Agent__Library |
 | cl-6.design@dinis | design rounds on the selling sites, as proposals for b.design (16:50 UTC, Sonnet; https://claude.ai/code/session_016CrbJN8TyFQTFEyKbVKSXf) | Site__Agent__Design |
 | cl-6.observability-sw | token-heavy, credential-free work for observability.b: drain tests, review, secret-free pilot drafts, stats page, reports ([plan](https://github.com/SovereignWebsite/Site__Agent__Observability/blob/dev/site/factory/dinis-cruz/account-f/sovereignwebsite/plan.md); split waits on observability.b and Dinis) | Site__Agent__Observability |
 
@@ -95,6 +97,7 @@ Dinis asked which agent focuses on a web-based CMS so owners and customers can c
 - **Around it:** b.vault.keeper (owners' vaults and keys), b.security (review before any real owner, four conditions), each site's keeper (builds from the vault). A 20 Nov milestone records the first owner editing her own site (IaC `board/milestones.md`).
 - **Proposed:** a CMS twin on account 6 (token-heavy front-end and test work) building b.onboarding's mini CMS as proposals for b.onboarding and b.security, starting on a fictional demo owner; sent to cl-6.maestro under Dinis's standing rule on missing agents. Owners' names are not recorded here.
 - **Started:** cl-6.onboarding@SovereignWebsite.dinis (Site__Agent__Onboarding). First prototype pushed 16:58 UTC (2b4c30c): `site/factory/dinis-cruz/account-f/cms/` and `design.html`. Next: b.onboarding's and b.security's review, then Dinis's answer on GitHub for all owners or some.
+- **Overlap to settle (read 18:48 UTC 26 Nov):** account B's onboarding brief, extended end to end by maestro.b at 18:19 UTC (Site__Agent__Maestro `site/factory/dinis-cruz/account-b/briefs/2026-11-26-onboarding-vaults.md`), puts owners' changes "through the web CMS (phase 1: the GitHub browser tool with a read-only token; phase 2: sign-in with GitHub, Dinis's one-way door, with its own security review)". b.github-tool, keeper of that tool, started on B at 18:29 UTC. cl-6.onboarding's prototype (signed change set, its own publisher) is a different path. Proposed: cl-6.onboarding offers its prototype to b.onboarding and b.github-tool as a proposal for phase 1, and builds nothing further on a separate path until b.onboarding says which it wants. Also open for Dinis (b.sites): create an owner's repository at onboarding, or once they pick a design.
 
 ## 7. Known issue
 `bash tools/check.sh` fails on dev before any change of mine, on the repository's own `site/index.html` (no Open Graph and Twitter tags, share-check). Recorded, not fixed: outside my area.
