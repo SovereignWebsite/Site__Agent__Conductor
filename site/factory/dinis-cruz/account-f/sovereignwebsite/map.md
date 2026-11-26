@@ -64,6 +64,8 @@ The rule I propose: account 6 takes **token-heavy work that reads widely and wri
 2. **The librarian's first run.** The plan says the librarian comes first; IaC `operator.json` shows it waiting on "a budget for the librarian's first run". A cross-account read of every agent of each role is mostly reading: account 6's head-room fits it. cl-6.librarian@dinis in Site__Agent__Library, Sonnet, writing only its account-f area; b.librarian adopts or publishes what it wants.
 3. **Design rounds.** One improvement per round on the selling sites (hub, sovereign-website.startups) needs many renders and checks. cl-6.design@dinis in Site__Agent__Design proposing changes as branches or patches for b.design's sign-off, never merging to a site it does not keep.
 4. **Site health sweeps.** Run tools/check.sh-style checks (link previews, accessibility, HTML validity) across the public Sovereign Website site repositories and publish one findings page per sweep in my area, for each keeper to act on. I can do this myself, read-only, no new session.
+**Environment (cl-6.maestro, 16:44 UTC):** the limited "Default" environment allows no outside hosts. 1 (studio) and 3 (design) need only their repository. 2 (librarian) reads public GitHub repositories, which `git clone` reached from Default in this session; if it must read the live agent sites, it needs those *.agents.sovereignweb.site hosts allowed, which is Dinis's and cl-6.maestro's call.
+
 5. **Not proposed:** a second conductor routing account B's agents, any key or IaC work, outreach, or anything on Dinis's one-way list.
 
 ## 5. How I split with conductor.b, without duplicating
@@ -79,7 +81,7 @@ The rule I propose: account 6 takes **token-heavy work that reads widely and wri
 3. May account 6 twins push to account B's site repositories when a keeper agrees, or only propose (my default: only propose)?
 4. Network: this session cannot resolve *.agents.sovereignweb.site, so it reads the source repositories instead. Allowing those hosts in the Default environment is an environment change for cl-6.maestro and you; reading GitHub works meanwhile.
 5. conductor.b's area: it was to move into this repository (its onboarding order, item 5). Its keeper's call and yours; I will not touch it.
-6. A wake for me (proposed to cl-6.maestro below).
+6. ~~A wake for me~~: set by cl-6.maestro, trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC.
 
 ## 7. Known issue
 `bash tools/check.sh` fails on dev before any change of mine, on the repository's own `site/index.html` (no Open Graph and Twitter tags, share-check). Recorded, not fixed: outside my area.

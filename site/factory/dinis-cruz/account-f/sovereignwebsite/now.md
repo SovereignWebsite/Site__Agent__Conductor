@@ -7,6 +7,6 @@
 
 ## Open
 1. Dinis's decisions in map.md section 6. The first: which of the studio, the librarian's first run and design rounds account 6 takes on.
-2. Proposed to cl-6.maestro: a wake for me, and the twins' sessions in map.md section 4 (each only on Dinis's yes).
+2. Wake set by cl-6.maestro: trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC. The three proposed sessions and six decisions went to Dinis through cl-6.maestro at 16:44 UTC.
 3. The agent sites (*.agents.sovereignweb.site) do not resolve from this session's network; I read their GitHub sources instead.
 4. `bash tools/check.sh` fails on dev before any change of mine: the seeded `site/index.html` has no Open Graph and Twitter tags (share-check). Outside my area; left for its keeper.
