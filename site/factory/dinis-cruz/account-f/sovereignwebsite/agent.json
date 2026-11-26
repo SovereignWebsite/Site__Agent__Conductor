@@ -25,7 +25,7 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
   "wake": "trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC, set by cl-6.maestro (26 Nov 16:44 UTC)",
   "state": "waiting",
-  "updated": "2026-11-26T16:43Z",
+  "updated": "2026-11-26T16:46Z",
   "waiting_on": [
     {
       "what": "Dinis's answers to the six decisions in map.md section 6 (which proposals to start, the split with conductor.b, push or propose to account B sites, network, conductor.b's area, my wake)",
