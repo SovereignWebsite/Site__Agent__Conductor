@@ -19,15 +19,15 @@
   },
   "repositories": {
     "home": "SovereignWebsite/Site__Agent__Conductor (this site, /factory/dinis-cruz/account-f/sgit/)",
-    "project": "SGit-AI/SGit-AI__CLI (public, not attached to account 6; see map.md)"
+    "project": "SGit-AI/SGit-AI__CLI and 23 more public SGit-AI repositories, none attached to account 6 (see map.md)"
   },
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
   "wake": "none set yet; to propose to cl-6.maestro",
   "state": "waiting",
-  "updated": "2026-11-26T13:59Z",
+  "updated": "2026-11-26T15:55Z",
   "waiting_on": [
     {
-      "what": "Dinis's answers to the questions in map.md (attach SGit-AI__CLI, PyPI on dev, newsroom, SG/Send, IaC, old branches)",
+      "what": "Dinis's answers to the eleven questions at the end of map.md (attach SGit-AI__CLI, PyPI on dev, AI gate key, newsroom, SG/Send, IaC, private repos, abp.sgit.ai, Ruv secrets, the 26 older sessions, old branches)",
       "who": "Dinis Cruz, through cl-6.maestro",
       "since": "2026-11-26T13:57Z"
     }
