@@ -1,0 +1,15 @@
+{
+  "agent": "cl-6.conductor-sw@SovereignWebsite.dinis",
+  "session": "https://claude.ai/code/session_016CrbJJDDrc1h8iMR8TwXKq",
+  "status": "active",
+  "fingerprint": "sha256:7cced9947a91a477",
+  "signing_fingerprint": "sha256:56e061b504533d6e",
+  "ssh": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFtpq/fbmmF70QTkmelpFcz76Z+1hA6q3ycYWtsNFs4N0Jy5xHfFmeaZs2+k6Xs1FhoH+UR7S3tYcVZyQdUHBBE=",
+  "bundle": {
+    "sign": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEW2mr99uaYXvRBOSZ6WkVzPvpn7WE\nDqrfJxha2w0Wzg3QnLnEd8WZ5pmzb6TpezUWGgf5RHtLe1hxVnJB1QcEEQ==\n-----END PUBLIC KEY-----\n",
+    "encrypt": "-----BEGIN PUBLIC KEY-----\nMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAu1/i5cDQUVskz92jpz7A\nbD//jTKOqypoGedrnR8OfSQR90JmRsSGeyq+zxU6NE/9ZIF46/TZHvNt6g5koUdk\nGlmfqnOGzzSaGpcn9K+/SNspRvbRTxAb8+YQlq2EcbgnDnFokXIUKYNnUvf8kQ6X\ndRKVn3aAryZnaiGYfPzXqs3gm3XBGNqfALafQsCtjoWIQUaBJ5HtMIv3v0/aFaGN\nLHTyCq6YvyGa/w0JgK9T+lSXBAaHjlyPn1IBiAMZckMgJKCpKUxGlsg+k2mEvR0F\nqdDV0OL+zp8jS9TSS1nmk/U+Rkep0VScYP9RrTxe6e61zMMczbodbA9eH+zNPQrW\nc+dD1tnp9i/9A7Gd9eSWoQUDbz3jQ8BFWvZbpSVK7OoodCt2wyXsbaMhkifOKGr0\nU7pw094vQ4QKUNmv/fh5zv3/SysjrF3p0kZDryAf6i9NnIn6/SHFfxGjfrWfDDNG\n3OYWGeb/m6/5xVHEOqTiTR/gyt+x+ucBY9UroT+14n7QSKB/I8a9bWHP9xM5aTl/\nw/tvmQcaGXfOOez42SxUnlmIToO5yt8N+lsxupSfNNxvvyXj4csnCOM0oafsglJn\n9vbeSqFfVxYo15muQy3YTitpBVY/toAQCmsEN0VFeddWwusfjlrCw8UjNYJlIVJm\ncJ+dMI2y9/OkrWHuDCc9nqcCAwEAAQ==\n-----END PUBLIC KEY-----\n",
+    "sign_alg": "ECDSA P-256",
+    "encrypt_alg": "RSA-4096"
+  },
+  "how": "Made by the agent in its own session with openssl (P-256 signing, RSA-4096 encryption). Only the public halves are here; the private halves stay outside the repository, mode 600. fingerprint is sha256 of the encryption key's SPKI, signing_fingerprint of the signing key's (first 16 hex). A session key: it ends with its session."
+}
