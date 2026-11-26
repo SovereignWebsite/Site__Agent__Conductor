@@ -6,7 +6,7 @@
 - First read of the Sovereign Website work, account B's agents, conductor.b's hand-over state and account 6's agents: [map.md](map.md).
 
 ## Open
-1. Dinis's decisions in map.md section 6. The first: which of the studio, the librarian's first run and design rounds account 6 takes on.
+1. Dinis, 16:48 UTC: "yes, start all three: studio, librarian, design rounds" ([record](decisions/2026-11-26-start-studio-librarian-design.md)). Asked cl-6.maestro to start them. Decisions 2 to 5 in map.md section 6 still open.
 2. Wake set by cl-6.maestro: trig_01Exkuw8Yfc7D9XMoME9PFo9, 09:47 and 18:47 UTC. The three proposed sessions and six decisions went to Dinis through cl-6.maestro at 16:44 UTC.
 3. Account B at 73% of its capacity (Dinis via cl-6.maestro, 16:47 UTC): map.md now leans to starting all three proposed sessions this week.
 4. The agent sites (*.agents.sovereignweb.site) do not resolve from this session's network; I read their GitHub sources instead.

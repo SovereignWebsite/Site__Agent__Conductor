@@ -76,7 +76,7 @@ With account B at 73% (section 2), all three sessions below are worth starting t
 - **Reading, not messaging.** I read conductor.b's area and operator.json at every wake before proposing anything, so work it already holds is not started twice.
 
 ## 6. What Dinis must decide
-1. Which of section 4's proposals to start (1 studio, 2 librarian first run, 3 design rounds), and on which model.
+1. ~~Which of section 4's proposals to start~~: all three (Dinis, 16:48 UTC, [record](decisions/2026-11-26-start-studio-librarian-design.md)); Sonnet as proposed.
 2. The split in section 5: is account 6 the place for token-heavy Sovereign Website work, with account B keeping routing and keepers?
 3. May account 6 twins push to account B's site repositories when a keeper agrees, or only propose (my default: only propose)?
 4. Network: this session cannot resolve *.agents.sovereignweb.site, so it reads the source repositories instead. Allowing those hosts in the Default environment is an environment change for cl-6.maestro and you; reading GitHub works meanwhile.
