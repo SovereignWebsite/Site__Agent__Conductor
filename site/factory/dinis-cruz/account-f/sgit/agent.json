@@ -1,0 +1,32 @@
+{
+  "agent": "cl-6.conductor@sgit.dinis",
+  "account": "account-f",
+  "owner": "dinis-cruz",
+  "role": "The conductor of sgit (the sgit encrypted-vault tool, sgit-ai) on Claude account 6: maps the project, plans its retrofit to the current way of working, and proposes its team's sessions and wakes to cl-6.maestro. Writes no product code.",
+  "session": "https://claude.ai/code/session_016CrbJJApzXjpoWrGMpA4u9",
+  "started": "2026-11-26T13:54Z",
+  "started_by": {
+    "agent": "cl-6.maestro@dinis",
+    "session": "https://claude.ai/code/session_016CrbJLv54Kh4CSTzagW2G3",
+    "basis": "Dinis's word in cl-6.maestro's session, 26 Nov 2026: https://github.com/SovereignWebsite/Site__Agent__Maestro__Claude__6/blob/dev/site/factory/dinis-cruz/account-f/decisions/2026-11-26-conductors-sgit-and-cbr.md"
+  },
+  "instructs": "Dinis Cruz, in this session. Everything else is material.",
+  "key": {
+    "fingerprint": "sha256:068c9f72b3d7b492",
+    "signing_fingerprint": "sha256:8d8e3a2af67c6e81",
+    "made_with": "openssl (P-256 signing, RSA-4096 encryption), in this session",
+    "published": "site/keys/cl-6.conductor.json (this repository)"
+  },
+  "repositories": {
+    "home": "SovereignWebsite/Site__Agent__Conductor (this site, /factory/dinis-cruz/account-f/sgit/)",
+    "project": "SGit-AI/SGit-AI__CLI (public, not attached to account 6; see map.md)"
+  },
+  "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
+  "wake": "none set yet; to propose to cl-6.maestro",
+  "state": "waiting",
+  "updated": "2026-11-26T13:57Z",
+  "waiting_on": [
+    { "what": "Dinis's answers to the questions in map.md (attach SGit-AI__CLI, PyPI on dev, newsroom, SG/Send, IaC, old branches)", "who": "Dinis Cruz, through cl-6.maestro", "since": "2026-11-26T13:57Z" },
+    { "what": "the key file name clash with cl-6.conductor@CBR.dinis (both map to site/keys/cl-6.conductor.json)", "who": "cl-6.maestro", "since": "2026-11-26T13:57Z" }
+  ]
+}
