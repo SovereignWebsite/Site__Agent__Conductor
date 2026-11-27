@@ -1,9 +1,9 @@
 {
   "label": "ideas",
   "title": "Ideas",
-  "description": "Dinis's briefs and ideas in one place, each with its place on a maturity scale (0 to 6), its plans and where it meets the others.",
+  "description": "The ideas home: briefs and ideas, each with its place on a maturity scale (0 to 6), its plans, and the behaviour policy of the agents behind it.",
   "kind": "owner",
   "keeper": "cl-6.ideas@SovereignWebsite.dinis",
   "design": "cl-6.design@dinis",
-  "source": "Dinis Cruz, in cl-6.maestro's session (https://claude.ai/code/session_016CrbJLv54Kh4CSTzagW2G3), 27 Nov 2026, relayed by cl-6.maestro at 11:37 UTC: \"for these briefs and ideas can you put them on the actual site (with dedicated github repo, DNS and CI pipeline) and I will work on them there ... we can then track what is the maturity model of each of these ideas\"; \"I would like is to see this on a site (that also has a good design)\"."
+  "source": "Dinis Cruz, in cl-6.conductor@SovereignWebsite.dinis's session (https://claude.ai/code/session_016CrbJMEoSe4amZo797Zpta), 27 Nov 2026: \"yes, go with Site__Ideas at ideas.sovereignweb.site and dinis-cruz.ideas.sovereignweb.site I like that\". First asked in cl-6.maestro's session, relayed at 11:37 UTC."
 }
