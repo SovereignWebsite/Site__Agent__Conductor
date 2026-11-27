@@ -13,8 +13,8 @@
 - `a-oliveira-cruz.poet.sovereignweb.site` would need a new `poet` group, a rule change for one site.
 - What it leaves room for: each collection can later have its own site under the poet, as `<collection>.a-oliveira-cruz.author.sovereignweb.site`.
 
-## Before it is made public
-The Factory's rule: "Every site Dinis asks for has the person's or organisation's approval for a public address", and a request names no private person until they agree. A body of published poetry makes the name public as an author. The site still needs A. Oliveira Cruz's agreement (or that of whoever speaks for the work) to a public address, recorded by Dinis. Until then the request waits, or goes in as a private vault site (`"access": "vault"`), which shows only a gated holding page.
+## Agreed
+Dinis, in this session, 27 Nov 2026 (15:21 UTC): "yes, go with author, he has agreed". The address is a-oliveira-cruz.author.sovereignweb.site, and the poet has agreed to a public site, as the Factory's rule requires.
 
 ## Content
 Only from sources Dinis gives, or the poet's own published material. Nothing is invented about the poet's life or work. The keeper asks Dinis for sources at its first round.
