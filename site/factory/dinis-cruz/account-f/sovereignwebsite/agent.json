@@ -25,7 +25,7 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main. No add_repo, create_session or scheduled task.",
   "wake": "trig_014R2LQTMRT45UGo1dkSk6sm, 09:47 and 18:47 UTC, into this session, set by cl-6.maestro (26 Nov 17:04 UTC); the old trig_01Exkuw8Yfc7D9XMoME9PFo9 disabled and the previous session archived",
   "state": "active",
-  "updated": "2026-11-27T09:49Z",
+  "updated": "2026-11-27T09:55Z",
   "waiting_on": [
     {
       "what": "Dinis's answers to decisions 2 to 5 in map.md section 6",
@@ -41,11 +41,6 @@
       "what": "which owners' CMS path to build on: B's GitHub browser tool (b.github-tool, phase 1 in B's onboarding brief) or cl-6.onboarding's prototype; proposed to go through b.onboarding",
       "who": "b.onboarding, via cl-6.maestro; Dinis if they differ",
       "since": "2026-11-26T18:48Z"
-    },
-    {
-      "what": "review of the first draft video \"Whose website is it?\" (Site__Agent__Studio site/accounts/c/drafts/2026-11-27__whose-website-characters/) before the final cut",
-      "who": "Dinis Cruz",
-      "since": "2026-11-27T04:38Z"
     }
   ],
   "twins_on_account_6": {
