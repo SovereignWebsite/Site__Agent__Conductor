@@ -22,6 +22,10 @@ If Dinis prefers no exception, the alternative is a new group: `dinis-cruz.ideas
 - **Design:** cl-6.design@dinis. By the Factory's guidance a new request is registered with design.b at M0 for a design brief. cl-6.design works as proposals for b.design's sign-off (map.md section 3), so the brief and sign-off stay with design.b.
 - **Content to seed it**, staged by cl-6.maestro in Site__Agent__Maestro__Claude__6 dev, `site/factory/dinis-cruz/account-f/`: `ideas/index.json` (b5017eb: six ideas, a 0 to 6 maturity scale, intersections), `plans/2026-11-27-commerce/`, `plans/2026-11-27-events/`, `plans/2026-11-27-meetscribe-store.md` and `decisions/2026-11-27-work-cells.md`. The keeper copies it in after its first build.
 
+## For the design brief
+- **The strategy behind it.** Dinis, word for word, relayed by cl-6.maestro at 11:38 UTC: "the core strategy is that all of this (i.e. sites) are way for users/customers to experience ABPs". It is recorded in `ideas/index.json` under "strategy". So each idea's page shows the behaviour policy (ABP) of the agents and tools behind that idea, not only a description of the idea.
+- Dinis liked the events MVP's layer diagram (`plans/2026-11-27-events/`). He wants the site to have a good design.
+
 ## Checked
 In a clone of SovereignWebsite__IaC (dev, 27 Nov 11:39 UTC), with both files applied:
 - `validate()` from build/requests.mjs returns no errors;
