@@ -1,4 +1,9 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 11:39 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 15:21 UTC)
+
+## 11:39 to 15:21 UTC, 27 Nov: three site requests
+- **Ideas sites.** Dinis's ask came through cl-6.maestro at 11:37 UTC. Then in this session he said: "yes, go with Site__Ideas at ideas.sovereignweb.site and dinis-cruz.ideas.sovereignweb.site I like that". Drafted as a new `ideas` group, with its home in NO_GROUP (the presentations pattern). That gives Site__Ideas and Site__Ideas__Dinis-Cruz, kept by cl-6.ideas. See [proposals/2026-11-27-ideas-site/](proposals/2026-11-27-ideas-site/README.md).
+- **The poet A. Oliveira Cruz.** Dinis: "yes, go with author, he has agreed". The site is a-oliveira-cruz.author.sovereignweb.site (Site__Author__A-Oliveira-Cruz). See [proposals/2026-11-27-poet-site/](proposals/2026-11-27-poet-site/README.md). The content sources are still to come from Dinis.
+- All three requests check clean against SovereignWebsite__IaC dev b252826: validate and load give no errors, and test/run.mjs passes. Sent to cl-6.maestro to route through cl-6.router to factory.b. Dinis merges.
 
 ## Wake 09:49 UTC, 27 Nov
 - conductor.b's area moved into this repository at Dinis's word (d6a5762, 26 Nov 23:30 UTC): `site/factory/dinis-cruz/account-b/sovereignwebsite/`. It is a new session with its key in IaC; it waits on b.maestro over an incident (its signing key step was refused) and on Dinis for status.json's asks. map.md section 6 item 5 settled.
