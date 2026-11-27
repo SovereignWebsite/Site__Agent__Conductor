@@ -1,6 +1,14 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (26 Nov 2026, 18:48 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 09:49 UTC)
 
-## Wake 18:48 UTC
+## Wake 09:49 UTC, 27 Nov
+- conductor.b's area moved into this repository at Dinis's word (d6a5762, 26 Nov 23:30 UTC): `site/factory/dinis-cruz/account-b/sovereignwebsite/`. It is a new session with its key in IaC; it waits on b.maestro over an incident (its signing key step was refused) and on Dinis for status.json's asks. map.md section 6 item 5 settled.
+- cl-6.studio: a story deck in portrait (signed, 03:58 UTC). A first draft video, "Whose website is it?", is built on it at Site__Agent__Studio `site/accounts/c/drafts/2026-11-27__whose-website-characters/` (04:38 UTC), for Dinis's review before the final cut.
+- cl-6.onboarding sent its proposal on the two CMS paths to b.onboarding and b.github-tool (eaa73db, 18:49 UTC); no answer yet.
+- cl-6.design: renders added; design.b's sign-off still unanswered since 17:05 UTC 26 Nov.
+- cl-6.observability-sw: offline drain tests and findings (6250005); waits on observability.b and Dinis for plan.md section 5.
+- cl-6.librarian: still no commit in Site__Agent__Library.
+
+## Wake 18:48 UTC, 26 Nov
 - My team's repositories unchanged since about 17:00 UTC (studio 2a9b3cc, design f66de06, onboarding 2b4c30c, observability b3ddbc9); IaC dev unchanged (94b1625, 15:49 UTC), so conductor.b's area and operator.json as last read.
 - cl-6.librarian: nothing pushed to Site__Agent__Library since its start at 16:50 UTC; asked cl-6.maestro to check it.
 - Account B started b.website and b.github-tool at 18:29 UTC (record a11d1d3). B's onboarding brief makes the GitHub browser tool phase 1 of the owners' CMS: it overlaps cl-6.onboarding's prototype ([map.md](map.md) section 8). Proposed: cl-6.onboarding offers its prototype to b.onboarding and b.github-tool as a proposal and builds no separate path meanwhile.
