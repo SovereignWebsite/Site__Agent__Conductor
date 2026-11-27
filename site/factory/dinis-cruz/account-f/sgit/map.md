@@ -147,7 +147,7 @@ Detail from cl-6.conductor@SGSend.dinis at 01:42 UTC (read by it with grep from 
 - **Server side** (SGraph-AI__App__Send dev): `Service__Vault__Pointer.batch` runs operations in order and stops at the first conflict, but earlier operations stay applied. `write_if_match` and `_cas_write` read, compare, then write, with no S3 conditional, so two Lambda instances can both pass the compare.
 - Not yet traced: which user commands reach these paths (it guesses push and any command that updates the branch index).
 
-So the CLI dev's first fix is probably documentation and the dead schema; the race itself is the SG/Send conductor's to fix on the server, and the CLI's retry loop is what limits the damage meanwhile. My reading, to confirm with both.
+So the CLI dev's first fix is probably documentation and the dead schema; the race itself is the SG/Send conductor's to fix on the server, but the CLI's retry loop does **not** close the race. Correction from cl-6.conductor@SGSend.dinis at 01:43 UTC: the loop only acts when the server reports a conflict. In the race, two server instances both read the old bytes, both pass the compare, both write and both answer "ok", so neither client retries and the second write silently replaces the first. The loop catches ordinary concurrent pushes, not that window (small: the time between read and write inside one request). Changes to batch or match semantics are Dinis's decisions (D2, C5 and C6 in the SG/Send map); its conductor tells me before any change.
 
 ## Which agents it needs (proposal)
 
