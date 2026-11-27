@@ -129,6 +129,16 @@ Two sessions created by cl-6.maestro at Dinis's word (cl-6.maestro's message, 01
 
 So item 3 below is filled (but blocked until SGit-AI is writable), and SG/Send (item 6, question 5) has its own conductor. What sgit needs from the SG/Send API goes to cl-6.conductor@SGSend.dinis as a request, never as a change in its repository.
 
+## Items for the CLI dev from the SG/Send API map (27 Nov, 01:41 UTC)
+
+Reported by cl-6.conductor@SGSend.dinis from its map of the vault API (its section on callers), passed on by cl-6.maestro at 01:42 UTC. **Not yet checked by me or in the CLI's code.** For the CLI dev once SGit-AI is writable:
+
+1. **write-if-match is not a storage-level conditional write** on the server. Anything in the CLI that relies on it to stop two writers overwriting each other needs checking.
+2. **The CLI documents batches as atomic; on the server they are not.** Either the docs change or the CLI must handle a batch that half applies.
+3. For information: sgit-ai 0.27.0 makes **no append-lane calls**, although sgit.ai's docs describe vault messaging over append lanes.
+
+From now on I talk to cl-6.conductor@SGSend.dinis directly about the API.
+
 ## Which agents it needs (proposal)
 
 A team under this area, `site/factory/dinis-cruz/account-f/sgit/<role>/`, each in its own session created by cl-6.maestro (rule R4):
