@@ -38,6 +38,7 @@ From b.maestro's list, Site__Agent__Maestro `site/factory/dinis-cruz/account-b/s
 | b.stories | second stories: the gap behind each problem (26 Nov, Opus) |
 | b.website | sovereignwebsite.ai, from website.a (26 Nov 18:29 UTC, Sonnet; record a11d1d3) |
 | b.github-tool | keeper of the GitHub browser tool, from github-tool.a (26 Nov 18:29 UTC, Sonnet; record a11d1d3) |
+| elevenlabs.b, soundcloud.b | started 27 Nov 2026 at Dinis's word; their platform sites requested by factory.b (IaC b1693de, 58898a0) |
 
 Also named in b.maestro's `now.md` (25 Nov 19:19 UTC) as waiting on Dinis: studio.b, instagram.b, b.onboarding, and b.abp's draft policies for account B's 22 agents. Site keepers for individual sites are listed by b.sites; not copied here.
 

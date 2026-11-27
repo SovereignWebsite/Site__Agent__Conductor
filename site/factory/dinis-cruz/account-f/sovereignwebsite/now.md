@@ -1,4 +1,11 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 15:21 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 18:48 UTC)
+
+## Wake 18:48 UTC, 27 Nov
+- The three site requests (ideas, dinis-cruz.ideas, a-oliveira-cruz.author) are not in SovereignWebsite__IaC yet. cl-6.maestro's briefing holds a paste line for Dinis to give factory.b.
+- The poet research cell is on cl-6.maestro's board as "briefed" (2026-11-27-poet-research). It is not started: it still needs to know where the Google Search API access lives, and a cell role grant.
+- cl-6.studio: a player for both decks, an ElevenLabs score for "Signed", and SG/Send uploads for hand-overs at Dinis's word (Site__Agent__Studio 5d2671f, 17:26 UTC).
+- No change: cl-6.design (last commit 20:41 UTC yesterday), cl-6.onboarding (no answer from b.onboarding), cl-6.observability-sw (waits on plan.md section 5). cl-6.librarian still has no commit.
+- Account B: elevenlabs.b and soundcloud.b started, with their platform sites requested (map.md section 2).
 
 ## 11:39 to 15:21 UTC, 27 Nov: three site requests
 - **Ideas sites.** Dinis's ask came through cl-6.maestro at 11:37 UTC. Then in this session he said: "yes, go with Site__Ideas at ideas.sovereignweb.site and dinis-cruz.ideas.sovereignweb.site I like that". Drafted as a new `ideas` group, with its home in NO_GROUP (the presentations pattern). That gives Site__Ideas and Site__Ideas__Dinis-Cruz, kept by cl-6.ideas. See [proposals/2026-11-27-ideas-site/](proposals/2026-11-27-ideas-site/README.md).
