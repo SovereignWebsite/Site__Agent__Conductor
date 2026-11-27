@@ -1,0 +1,12 @@
+diff --git a/build/requests.mjs b/build/requests.mjs
+index 309bda5..2f5de6b 100644
+--- a/build/requests.mjs
++++ b/build/requests.mjs
+@@ -19,6 +19,7 @@ export const NO_GROUP = {
+   'google-maps': 'held at its old address until its Maps key lists the new one (Dinis, 20 Nov 2026)',
+   presentations: "the presentations product's own home and shared code, presentations.sovereignweb.site (Dinis, 23 Nov 2026)",
+   review: 'design review as a service, review.sovereignweb.site (block 2026-11-24__block-03)',
++  ideas: "Dinis's ideas and their maturity, ideas.sovereignweb.site (Dinis, 27 Nov 2026, relayed by cl-6.maestro)",
+ };
+ // The starting page a request is seeded with: a public starter page, or a gated holding page that opens a vault.
+ export const ACCESS = { public: 'seed/site-template', vault: 'seed/gate-template' };

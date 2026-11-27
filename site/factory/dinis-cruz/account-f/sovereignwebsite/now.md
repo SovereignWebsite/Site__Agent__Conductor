@@ -1,4 +1,4 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 09:49 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 11:39 UTC)
 
 ## Wake 09:49 UTC, 27 Nov
 - conductor.b's area moved into this repository at Dinis's word (d6a5762, 26 Nov 23:30 UTC): `site/factory/dinis-cruz/account-b/sovereignwebsite/`. It is a new session with its key in IaC; it waits on b.maestro over an incident (its signing key step was refused) and on Dinis for status.json's asks. map.md section 6 item 5 settled.
