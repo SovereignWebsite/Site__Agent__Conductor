@@ -1,6 +1,6 @@
 # sgit: map of the project's repositories and sessions
 
-By cl-6.conductor@sgit.dinis. First version 26 Nov 2026, 13:57 UTC; revised 15:55 UTC to add account 6's older sgit sessions (cl-6.maestro's ask) and the 17 site repositories those sessions revealed. First piece of work, before changing anything: nothing below has been changed by me. Every fact comes from a repository, PyPI, a public page or a session's own record (title, repositories, status, its one-line summary), read today; no transcript was read. What I could not see is marked so.
+By cl-6.conductor@sgit.dinis. First version 26 Nov 2026, 13:57 UTC; revised 15:55 UTC to add account 6's older sgit sessions (cl-6.maestro's ask) and the 17 site repositories those sessions revealed. First piece of work, before changing anything: nothing below has been changed by me. Every fact comes from a repository, PyPI, a public page or a session's own record (title, repositories, status, its one-line summary), read on the day; no transcript was read. Revised again 27 Nov, 01:36 UTC, with the two new sessions. What I could not see is marked so.
 
 ## How I looked
 
@@ -13,7 +13,7 @@ By cl-6.conductor@sgit.dinis. First version 26 Nov 2026, 13:57 UTC; revised 15:5
 
 - **The code is `SGit-AI/SGit-AI__CLI`** (PyPI names it as the repository). It is public but not attached to account 6, so I can read it and cannot push to it.
 - **The project is its own GitHub organisation, `SGit-AI`**, with at least **24 public repositories**: the CLI, sgit.ai, the newsroom and its API, and 20 more sites under *.sgit.ai. None is visible to account 6 through `list_repos`, yet **26 older sessions on account 6 worked on them** (August to October, about $1,346 in all), so the account had access then and does not list it now.
-- **One repository it depends on is visible here:** `the-cyber-boardroom/SGraph-AI__App__Send` (the SG/Send server sgit speaks to). That is the CBR conductor's ground as much as mine.
+- **One repository it depends on is visible here:** `the-cyber-boardroom/SGraph-AI__App__Send` (the SG/Send server sgit speaks to). Since 27 Nov it has its own conductor, cl-6.conductor@SGSend.dinis (below).
 - **Nothing in the sgit repositories follows the current way yet**: no per-agent keys, no `Agent:` trailers, work on `claude/*` branches, and no agent areas, with one exception: the newsroom, whose agents keep areas (below).
 - **One rule clash to settle first:** in SGit-AI__CLI a push to dev publishes a pre-release to PyPI. "Dev only" there still ships a package.
 - **None of the 26 older sessions needs to keep running.** Two should wait for an answer and four have open items to hand over (below); the other 20 can be archived once Dinis agrees.
@@ -116,7 +116,18 @@ Recommendation: **archive** the first six (all done; the newsroom has moved on t
 | Infographic catalogue site (23 to 24 Aug) | Website__Infographics | blocked: waiting for a PNG to be pushed | $9.57 | Archive; the PNG to the small-sites keeper. |
 | Vault concepts and usage review (22 Aug) | Website__Graphs | review ready: a reading of two vaults | $1.20 | Archive. |
 
-(The April to May "SG/..." sessions, SG/Send, SG/Vault, SG/Compute and others, are SG/Send's history, not sgit's: for the CBR conductor.)
+(The April to May "SG/..." sessions, SG/Send, SG/Vault, SG/Compute and others, are SG/Send's history, not sgit's: for cl-6.conductor@SGSend.dinis.)
+
+## The team now (27 Nov 2026, 01:36 UTC)
+
+Two sessions created by cl-6.maestro at Dinis's word (cl-6.maestro's message, 01:37 UTC on 27 Nov), both checked by their session records:
+
+| Agent | Session | Repository attached | Reports to | State at 01:36 UTC |
+|---|---|---|---|---|
+| cl-6.website@sgit.dinis | session_016CrbJJBxxMtZtCXzFBB9Nf | SGit-AI/SGit-AI__Website | me | started 01:36 UTC, working |
+| cl-6.conductor@SGSend.dinis | session_016CrbJL9HXMutDbCSwhPb6o | the-cyber-boardroom/SGraph-AI__App__Send (dev) | Dinis, through cl-6.maestro; a peer, not part of this team | started 01:33 UTC, working; leads a project on the API the vaults use |
+
+So item 3 below is filled, and SG/Send (item 6, question 5) has its own conductor. What sgit needs from the SG/Send API goes to cl-6.conductor@SGSend.dinis as a request, never as a change in its repository.
 
 ## Which agents it needs (proposal)
 
@@ -124,10 +135,10 @@ A team under this area, `site/factory/dinis-cruz/account-f/sgit/<role>/`, each i
 
 1. **cl-6.conductor@sgit** (me): the map, the retrofit plan, routing; no code.
 2. **a dev for SGit-AI__CLI**: the code, tests and releases; first task, the security-review branch above. First of the team, because the PyPI-on-dev rule must be settled before any agent pushes there.
-3. **a keeper for sgit.ai** (SGit-AI__Website): the agents' main entry point, not moved since 13 Oct; first tasks, the two handovers above.
+3. **a keeper for sgit.ai** (SGit-AI__Website): **started as cl-6.website@sgit.dinis** on 27 Nov. The agents' main entry point, not moved since 13 Oct; first tasks, the two handovers above (the add-vaults branch and the refactor's seven decisions).
 4. **one keeper for the other 20 sites** while they are quiet, not one each: first tasks, the handovers above, then which sites stay live.
 5. **the newsroom** (Website__Newsroom and its API): already has agents (d.newsroom and its writers). I propose leaving it with them and only linking it from here, unless Dinis wants it moved to account 6.
-6. **SG/Send** (SGraph-AI__App__Send): shared with The Cyber Boardroom; I propose it belongs to the CBR conductor, with sgit's needs sent there.
+6. **SG/Send** (SGraph-AI__App__Send): **settled**: it has its own conductor, cl-6.conductor@SGSend.dinis; sgit's needs are sent there.
 
 The existing `team/` folders in SGit-AI__CLI and SGraph-AI__App__Send (explorer, villager, librarian and others) are an older role set; the retrofit should say what happens to them rather than run two systems side by side.
 
@@ -137,11 +148,11 @@ My view, firmer now that I can see 24 repositories: **not yet, but probably late
 
 ## What Dinis must attach or decide
 
-1. **Attach SGit-AI__CLI** (and, when their keepers start, SGit-AI__Website and the sites) to account 6 in new sessions created by cl-6.maestro, not to mine. Today `list_repos` shows nothing of the SGit-AI organisation, though 26 sessions here once worked on it: the GitHub access may need reconnecting for that organisation.
+1. **Attach SGit-AI__CLI** (and, when their keepers start, the sites; SGit-AI__Website is now attached to cl-6.website@sgit.dinis) to account 6 in new sessions created by cl-6.maestro, not to mine. On 26 Nov `list_repos` showed nothing of the SGit-AI organisation; that SGit-AI__Website could be attached on 27 Nov shows the access works for new sessions.
 2. **Dev publishes to PyPI**: keep it (a dev push is a pre-release), or change the CLI's pipeline so only a release step publishes.
 3. **The security review's AI gate** needs an Anthropic key; give it to the CLI dev's session as a credential, or drop the gate.
 4. **The newsroom**: stays with its current agents (apparently account D), or comes under this conductor. Either way, someone must recover or discard @newsroom.accountant's unpushed work.
-5. **SG/Send**: mine, the CBR conductor's, or shared.
+5. **SG/Send**: answered on 27 Nov: its own conductor, cl-6.conductor@SGSend.dinis.
 6. **An IaC repository for SGit-AI**: yes or no (my view above).
 7. **Private repositories**: whether SGit-AI__SG-Meter, Reader, Newsroom__Reader and SGraph-AI__Tools exist and are in scope.
 8. **abp.sgit.ai**: sgit's or RiskMandate's.

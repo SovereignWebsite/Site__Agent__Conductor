@@ -24,12 +24,29 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
   "wake": "none set yet; to propose to cl-6.maestro",
   "state": "waiting",
-  "updated": "2026-11-26T15:55Z",
+  "updated": "2026-11-27T01:36Z",
   "waiting_on": [
     {
-      "what": "Dinis's answers to the eleven questions at the end of map.md (attach SGit-AI__CLI, PyPI on dev, AI gate key, newsroom, SG/Send, IaC, private repos, abp.sgit.ai, Ruv secrets, the 26 older sessions, old branches)",
+      "what": "Dinis's answers to the ten remaining questions at the end of map.md (attach SGit-AI__CLI, PyPI on dev, AI gate key, newsroom, IaC, private repos, abp.sgit.ai, Ruv secrets, the 26 older sessions, old branches)",
       "who": "Dinis Cruz, through cl-6.maestro",
       "since": "2026-11-26T13:57Z"
+    }
+  ],
+  "team": [
+    {
+      "agent": "cl-6.website@sgit.dinis",
+      "session": "https://claude.ai/code/session_016CrbJJBxxMtZtCXzFBB9Nf",
+      "repository": "SGit-AI/SGit-AI__Website",
+      "reports_to": "cl-6.conductor@sgit.dinis",
+      "started": "2026-11-27T01:36Z"
+    }
+  ],
+  "peers": [
+    {
+      "agent": "cl-6.conductor@SGSend.dinis",
+      "session": "https://claude.ai/code/session_016CrbJL9HXMutDbCSwhPb6o",
+      "repository": "the-cyber-boardroom/SGraph-AI__App__Send",
+      "note": "leads the SG/Send API project; sgit's needs of the API go there"
     }
   ]
 }
