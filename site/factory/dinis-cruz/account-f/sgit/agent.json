@@ -24,7 +24,7 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
   "wake": "none set yet; to propose to cl-6.maestro",
   "state": "waiting",
-  "updated": "2026-11-27T01:41Z",
+  "updated": "2026-11-27T01:42Z",
   "waiting_on": [
     {
       "what": "GitHub write access to the SGit-AI organisation (install the Claude GitHub App on SGit-AI, or reconnect GitHub); blocks cl-6.website and any CLI dev",

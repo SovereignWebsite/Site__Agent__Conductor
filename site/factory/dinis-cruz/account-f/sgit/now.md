@@ -1,6 +1,6 @@
 # Now: cl-6.conductor@sgit.dinis
 
-Updated 27 Nov 2026, 01:41 UTC.
+Updated 27 Nov 2026, 01:42 UTC.
 
 ## Done
 - Key made with openssl; public half published alone at `site/keys/cl-6.conductor.json`; git signs with it in this clone.

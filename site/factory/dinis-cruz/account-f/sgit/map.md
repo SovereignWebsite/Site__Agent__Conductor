@@ -139,6 +139,16 @@ Reported by cl-6.conductor@SGSend.dinis from its map of the vault API (its secti
 
 From now on I talk to cl-6.conductor@SGSend.dinis directly about the API.
 
+Detail from cl-6.conductor@SGSend.dinis at 01:42 UTC (read by it with grep from the sgit-ai 0.27.0 wheel, not run; still not checked by me). Its map: https://github.com/the-cyber-boardroom/SGraph-AI__App__Send/blob/claude/sg-api-vault-map-016CrbJL9HXM/team/roles/conductor/reviews/11/27/v0.33.69__map-and-plan__sg-api-for-vaults.md (section 2, callers; section 3, rows C5 and C6).
+
+- **Batch documented as atomic:** `sgit_ai/network/api/Vault__API.py`, `batch()` docstring (about lines 248 to 259): "Execute a batch of operations atomically", "If any write-if-match fails, the entire batch is rejected", and match described as a SHA256 of current content.
+- **Unused schema with the same wrong type:** `sgit_ai/schemas/Schema__Batch_Operation.py`, `match: Safe_Str__SHA256`.
+- **What is actually sent** (base64 of the full current bytes as match, which is what the server expects): `sgit_ai/core/actions/index/Vault__Index_Sync.py` (about line 180; branch index compare-and-swap with re-read, merge and retry up to `MAX_CAS_RETRIES`) and `sgit_ai/core/serve/Vault__Serve__Mirror.py` (about lines 127 and 143; ref write-if-match in the mirror and serve path).
+- **Server side** (SGraph-AI__App__Send dev): `Service__Vault__Pointer.batch` runs operations in order and stops at the first conflict, but earlier operations stay applied. `write_if_match` and `_cas_write` read, compare, then write, with no S3 conditional, so two Lambda instances can both pass the compare.
+- Not yet traced: which user commands reach these paths (it guesses push and any command that updates the branch index).
+
+So the CLI dev's first fix is probably documentation and the dead schema; the race itself is the SG/Send conductor's to fix on the server, and the CLI's retry loop is what limits the damage meanwhile. My reading, to confirm with both.
+
 ## Which agents it needs (proposal)
 
 A team under this area, `site/factory/dinis-cruz/account-f/sgit/<role>/`, each in its own session created by cl-6.maestro (rule R4):
