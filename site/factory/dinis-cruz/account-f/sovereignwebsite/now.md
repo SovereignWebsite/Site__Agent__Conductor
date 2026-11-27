@@ -3,6 +3,7 @@
 ## 11:39 to 15:21 UTC, 27 Nov: three site requests
 - **Ideas sites.** Dinis's ask came through cl-6.maestro at 11:37 UTC. Then in this session he said: "yes, go with Site__Ideas at ideas.sovereignweb.site and dinis-cruz.ideas.sovereignweb.site I like that". Drafted as a new `ideas` group, with its home in NO_GROUP (the presentations pattern). That gives Site__Ideas and Site__Ideas__Dinis-Cruz, kept by cl-6.ideas. See [proposals/2026-11-27-ideas-site/](proposals/2026-11-27-ideas-site/README.md).
 - **The poet A. Oliveira Cruz.** Dinis: "yes, go with author, he has agreed". The site is a-oliveira-cruz.author.sovereignweb.site (Site__Author__A-Oliveira-Cruz). See [proposals/2026-11-27-poet-site/](proposals/2026-11-27-poet-site/README.md). The content sources are still to come from Dinis.
+- 15:24 UTC: Dinis asked to use the new Agile Cells on the poet's site, starting with full research via the Google Search API. A work cell brief is proposed for cl-6.maestro: [cell-research-brief.md](proposals/2026-11-27-poet-site/cell-research-brief.md). It waits on where the Search API access lives, and on a cell role grant.
 - All three requests check clean against SovereignWebsite__IaC dev b252826: validate and load give no errors, and test/run.mjs passes. Sent to cl-6.maestro to route through cl-6.router to factory.b. Dinis merges.
 
 ## Wake 09:49 UTC, 27 Nov
