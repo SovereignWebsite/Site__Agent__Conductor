@@ -1,6 +1,6 @@
 # sgit: map of the project's repositories and sessions
 
-By cl-6.conductor@sgit.dinis. First version 26 Nov 2026, 13:57 UTC; revised 15:55 UTC to add account 6's older sgit sessions (cl-6.maestro's ask) and the 17 site repositories those sessions revealed. First piece of work, before changing anything: nothing below has been changed by me. Every fact comes from a repository, PyPI, a public page or a session's own record (title, repositories, status, its one-line summary), read on the day; no transcript was read. Revised again 27 Nov, 01:36 UTC, with the two new sessions. What I could not see is marked so.
+By cl-6.conductor@sgit.dinis. First version 26 Nov 2026, 13:57 UTC; revised 15:55 UTC to add account 6's older sgit sessions (cl-6.maestro's ask) and the 17 site repositories those sessions revealed. First piece of work, before changing anything: nothing below has been changed by me. Every fact comes from a repository, PyPI, a public page or a session's own record (title, repositories, status, its one-line summary), read on the day; no transcript was read. Revised again 27 Nov, 01:36 UTC, with the two new sessions, and at 01:37 UTC: SGit-AI is read only from account 6. What I could not see is marked so.
 
 ## How I looked
 
@@ -124,10 +124,10 @@ Two sessions created by cl-6.maestro at Dinis's word (cl-6.maestro's message, 01
 
 | Agent | Session | Repository attached | Reports to | State at 01:36 UTC |
 |---|---|---|---|---|
-| cl-6.website@sgit.dinis | session_016CrbJJBxxMtZtCXzFBB9Nf | SGit-AI/SGit-AI__Website | me | started 01:36 UTC, working |
+| cl-6.website@sgit.dinis | session_016CrbJJBxxMtZtCXzFBB9Nf | SGit-AI/SGit-AI__Website | me | started 01:36 UTC; **blocked**: read only, push refused (403); no key, no area, nothing changed. Its clone: dev at v0.7.87 (4e00434) |
 | cl-6.conductor@SGSend.dinis | session_016CrbJL9HXMutDbCSwhPb6o | the-cyber-boardroom/SGraph-AI__App__Send (dev) | Dinis, through cl-6.maestro; a peer, not part of this team | started 01:33 UTC, working; leads a project on the API the vaults use |
 
-So item 3 below is filled, and SG/Send (item 6, question 5) has its own conductor. What sgit needs from the SG/Send API goes to cl-6.conductor@SGSend.dinis as a request, never as a change in its repository.
+So item 3 below is filled (but blocked until SGit-AI is writable), and SG/Send (item 6, question 5) has its own conductor. What sgit needs from the SG/Send API goes to cl-6.conductor@SGSend.dinis as a request, never as a change in its repository.
 
 ## Which agents it needs (proposal)
 
@@ -148,7 +148,7 @@ My view, firmer now that I can see 24 repositories: **not yet, but probably late
 
 ## What Dinis must attach or decide
 
-1. **Attach SGit-AI__CLI** (and, when their keepers start, the sites; SGit-AI__Website is now attached to cl-6.website@sgit.dinis) to account 6 in new sessions created by cl-6.maestro, not to mine. On 26 Nov `list_repos` showed nothing of the SGit-AI organisation; that SGit-AI__Website could be attached on 27 Nov shows the access works for new sessions.
+1. **Attach SGit-AI__CLI** (and, when their keepers start, the sites; SGit-AI__Website is now attached to cl-6.website@sgit.dinis) to account 6 in new sessions created by cl-6.maestro, not to mine. On 26 Nov `list_repos` showed nothing of the SGit-AI organisation. Attaching SGit-AI__Website on 27 Nov gave **read access only**: cl-6.website's `git push --dry-run` to dev at 01:36 UTC got 403 (the Claude GitHub App has no access to that repository). So **nothing in SGit-AI is writable from account 6** until Dinis installs the Claude GitHub App on the SGit-AI organisation or reconnects GitHub; a session may then need restarting for fresh credentials. A CLI dev session would be blocked the same way.
 2. **Dev publishes to PyPI**: keep it (a dev push is a pre-release), or change the CLI's pipeline so only a release step publishes.
 3. **The security review's AI gate** needs an Anthropic key; give it to the CLI dev's session as a credential, or drop the gate.
 4. **The newsroom**: stays with its current agents (apparently account D), or comes under this conductor. Either way, someone must recover or discard @newsroom.accountant's unpushed work.

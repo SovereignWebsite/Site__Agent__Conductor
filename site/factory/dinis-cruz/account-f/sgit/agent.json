@@ -24,8 +24,13 @@
   "rules": "R4 on account 6: only cl-6.maestro creates sessions and wakes. Dev only, never main.",
   "wake": "none set yet; to propose to cl-6.maestro",
   "state": "waiting",
-  "updated": "2026-11-27T01:36Z",
+  "updated": "2026-11-27T01:37Z",
   "waiting_on": [
+    {
+      "what": "GitHub write access to the SGit-AI organisation (install the Claude GitHub App on SGit-AI, or reconnect GitHub); blocks cl-6.website and any CLI dev",
+      "who": "Dinis Cruz",
+      "since": "2026-11-27T01:37Z"
+    },
     {
       "what": "Dinis's answers to the ten remaining questions at the end of map.md (attach SGit-AI__CLI, PyPI on dev, AI gate key, newsroom, IaC, private repos, abp.sgit.ai, Ruv secrets, the 26 older sessions, old branches)",
       "who": "Dinis Cruz, through cl-6.maestro",
@@ -38,7 +43,8 @@
       "session": "https://claude.ai/code/session_016CrbJJBxxMtZtCXzFBB9Nf",
       "repository": "SGit-AI/SGit-AI__Website",
       "reports_to": "cl-6.conductor@sgit.dinis",
-      "started": "2026-11-27T01:36Z"
+      "started": "2026-11-27T01:36Z",
+      "state": "blocked: read only on SGit-AI__Website, push 403; waiting on Dinis for GitHub access to SGit-AI"
     }
   ],
   "peers": [
