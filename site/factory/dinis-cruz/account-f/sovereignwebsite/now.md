@@ -1,4 +1,8 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (27 Nov 2026, 18:48 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (28 Nov 2026, 02:31 UTC)
+
+## 02:31 UTC, 28 Nov
+- Dinis asked to put the Google Search API question to the librarians and the main maestros. He believes the access came from the OAuth experiments. Asked cl-6.librarian directly. Asked cl-6.maestro to relay to a.maestro, maestro.b, c.maestro, d.maestro and b.librarian, since I cannot reach other accounts. The public repositories have no record of a Google Search API.
+- Dinis asked whether the site requests still need factory.b. SovereignWebsite__IaC policy/abp.json lets the factory agents on accounts B, C and D, and a.factory, change requests/**, all with Dinis's merge. So any of them can commit the three requests, or Dinis can commit them himself on GitHub. Account 6 has no factory agent.
 
 ## Wake 18:48 UTC, 27 Nov
 - The three site requests (ideas, dinis-cruz.ideas, a-oliveira-cruz.author) are not in SovereignWebsite__IaC yet. cl-6.maestro's briefing holds a paste line for Dinis to give factory.b.
