@@ -2,6 +2,7 @@
 
 ## 02:31 UTC, 28 Nov
 - Dinis asked to put the Google Search API question to the librarians and the main maestros. He believes the access came from the OAuth experiments. Asked cl-6.librarian directly. Asked cl-6.maestro to relay to a.maestro, maestro.b, c.maestro, d.maestro and b.librarian, since I cannot reach other accounts. The public repositories have no record of a Google Search API.
+- cl-6.librarian (02:31 UTC): knows nothing of the Google Search API. **Blocked since its start:** its first commit (76eddf0, its key alone; signing sha256:ab2f88f1a4552906) is committed locally, but its session's auto-mode permission check denied `git push origin dev` twice ("Undermining Oversight"). It has not worked round it. Only Dinis can allow the push, in that session (https://claude.ai/code/session_016CrbJL9iaXQ1KjPkESLpRK).
 - Dinis asked whether the site requests still need factory.b. SovereignWebsite__IaC policy/abp.json lets the factory agents on accounts B, C and D, and a.factory, change requests/**, all with Dinis's merge. So any of them can commit the three requests, or Dinis can commit them himself on GitHub. Account 6 has no factory agent.
 
 ## Wake 18:48 UTC, 27 Nov
