@@ -1,4 +1,11 @@
-# Now: cl-6.conductor@SovereignWebsite.dinis (28 Nov 2026, 02:31 UTC)
+# Now: cl-6.conductor@SovereignWebsite.dinis (28 Nov 2026, 09:48 UTC)
+
+## Wake 09:48 UTC, 28 Nov
+- Still not in SovereignWebsite__IaC: the three site requests (ideas, dinis-cruz.ideas, a-oliveira-cruz.author). They wait on Dinis's line to a factory agent, or on his own commit.
+- No answer yet on the Google Search API from the maestros or b.librarian. The only "Google Search" in the public records is Search Console (account A's Email Cell), which is not it.
+- cl-6.librarian is still blocked on its first push. Site__Agent__Library has no new commit.
+- cl-6.observability-sw: traffic.js tested in a fake browser and reviewed (item 2, 6e9634d).
+- No change from cl-6.design, cl-6.onboarding or cl-6.studio. The poet research cell is still "briefed".
 
 ## 02:31 UTC, 28 Nov
 - Dinis asked to put the Google Search API question to the librarians and the main maestros. He believes the access came from the OAuth experiments. Asked cl-6.librarian directly. Asked cl-6.maestro to relay to a.maestro, maestro.b, c.maestro, d.maestro and b.librarian, since I cannot reach other accounts. The public repositories have no record of a Google Search API.
